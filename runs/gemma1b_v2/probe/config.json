@@ -1,0 +1,43 @@
+{
+ "args": {
+  "data_dir": "data/gemma1b",
+  "out": "runs/gemma1b_v2/probe",
+  "synthetic": false,
+  "selftest": false,
+  "backend": "torch",
+  "device": "cuda",
+  "n_ctx": 5,
+  "min_mass": 0.15,
+  "alpha_rel": 0.01,
+  "alpha_abs": 0.001,
+  "ridge_rel": 1e-06,
+  "methods": "euclid,euclid_unemb,causal_unemb,dual",
+  "no_cluster_boot": false,
+  "topk": 20000,
+  "step_frac": 0.01,
+  "max_steps": 600,
+  "levels": "0.3,0.5,0.7,0.9,0.99",
+  "seed": 0,
+  "boot": 2000
+ },
+ "backend": "torch",
+ "V": 262144,
+ "d": 1152,
+ "n_pairs": 144,
+ "meta": {
+  "model": "google/gemma-3-1b-pt",
+  "dtype": "bfloat16",
+  "load_in_4bit": false,
+  "V": 262144,
+  "d": 1152,
+  "n_pairs": 144,
+  "logits_rel_err": 0.002942702267318964,
+  "seed": 0,
+  "torch": "2.6.0+cu124",
+  "transformers": "5.19.0",
+  "date": "2026-10-08T23:38:03.712921"
+ },
+ "python": "3.12.3",
+ "numpy": "2.5.3",
+ "runtime_s": 300.5
+}

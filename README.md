@@ -16,23 +16,36 @@ over contexts.
 
 ## Results
 
-See **`runs/AGGREGATE.md`** for the aggregate tables, guardrail checks,
-findings, and caveats. Summary: Euclidean steering dominates on gpt2,
-gemma-3-1b (bf16), and gemma-3-4b (4-bit) across alpha_rel in {1e-3, 1e-2,
-1e-1}; causal_fixed reaches on gemma but with consistently higher off-target
-KL; the adaptive dual method fails to reach on real models in this pipeline
-(mechanism diagnosed in `runs/AGGREGATE.md`).
+See **`runs/AGGREGATE.md`** for the v1 aggregate tables, guardrail checks,
+and scope-limited findings, and **`runs/AGGREGATE_V2.md`** for the follow-up
+experiments prescribed by `EXPERIMENT_REVIEW_AND_FIXES.md` (absolute-alpha
+sweep, Park 2024 recipe, Sigma_t spectrum diagnostics, cluster bootstrap,
+entropy diagnostics). Summary of the corrected picture:
+
+- v1 (relative alpha = alpha_rel * tr(S0)/d): euclid looks best, dual never
+  reaches - but the absolute alphas were 2-4 orders of magnitude below Park
+  2026's 5e-3, so v1 could not test the published methods (see the review).
+- v2 (absolute alpha): dual reaches reliably for alpha_abs >= 5e-3; Park
+  2024's recipe (causal_unemb: Cov^-1 applied to the mean unembedding
+  difference) is the strongest direction on BOTH gpt2 (KL 0.73 vs euclid
+  0.95 at level 0.9) and gemma-3-1b (KL 0.96 vs 1.12), with full reach, ~2x
+  fewer steps than euclid, and it lowers distribution entropy while
+  steering; the improvement over the raw unembedding direction is
+  significant under cluster bootstrap (+0.082 [+0.047, +0.115]).
 
 ## Repository layout
 
 ```
 RUNBOOK.md               experiment protocol (steps, guardrails, output spec)
+EXPERIMENT_REVIEW_AND_FIXES.md  design review of the v1 runs (in Chinese)
 extract_embeddings.py    stage 1: save G, verb pairs, context lambdas from an HF model
 steer_compare.py         stage 2: 3-method comparison, selftest, synthetic mode
+steer_compare_v2.py      stage 2 v2: absolute alpha, Park 2024 recipe, diagnostics
 run_all.sh               extract + alpha sweep wrapper
-runs/<tag>/<run>/        per-run outputs (summary/paired/per_context CSVs,
+runs/<tag>/<run>/        per-run outputs (summary/paired/per_context/final CSVs,
                          checks/config JSONs, curves.png, report.md)
-runs/AGGREGATE.md        cross-run aggregate report
+runs/AGGREGATE.md        v1 cross-run aggregate report
+runs/AGGREGATE_V2.md     v2 follow-up report (absolute alpha, Park 2024 recipe)
 data/                    NOT committed (G.npy up to 1.3 GB; regenerate locally)
 ```
 
