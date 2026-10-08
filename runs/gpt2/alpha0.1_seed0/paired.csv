@@ -1,0 +1,16 @@
+level,a,b,n_paired,kl_diff_mean,kl_diff_lo,kl_diff_hi,win_b_lower_kl,cf_diff_mean,cf_diff_lo,cf_diff_hi
+0.3,euclid,dual,79,-4.77351,-5.22253,-4.33665,0.0,-0.24812,-0.26689,-0.23101
+0.3,causal_fixed,dual,79,-3.20962,-3.73224,-2.70295,0.1139,-0.30902,-0.34062,-0.27713
+0.3,euclid,causal_fixed,80,-1.58872,-1.83487,-1.35887,0.0,0.06236,0.04171,0.08389
+0.5,euclid,dual,31,-5.14889,-5.80608,-4.4834,0.0,-0.21344,-0.2379,-0.18913
+0.5,causal_fixed,dual,31,-2.33028,-3.23596,-1.44541,0.2903,-0.26601,-0.29977,-0.22892
+0.5,euclid,causal_fixed,80,-2.85752,-3.20309,-2.54548,0.0,0.12575,0.10447,0.14802
+0.7,euclid,dual,16,-5.75181,-6.52643,-5.04356,0.0,-0.17231,-0.19507,-0.14871
+0.7,causal_fixed,dual,16,-0.73724,-1.95484,0.41176,0.4375,-0.24281,-0.26602,-0.22162
+0.7,euclid,causal_fixed,80,-4.42763,-4.85771,-4.0133,0.0,0.1842,0.1608,0.20784
+0.9,euclid,dual,2,nan,nan,nan,0.0,nan,nan,nan
+0.9,causal_fixed,dual,2,nan,nan,nan,1.0,nan,nan,nan
+0.9,euclid,causal_fixed,80,-7.141,-7.67954,-6.59423,0.0,0.28777,0.26013,0.31516
+0.99,euclid,dual,0,nan,nan,nan,nan,nan,nan,nan
+0.99,causal_fixed,dual,0,nan,nan,nan,nan,nan,nan,nan
+0.99,euclid,causal_fixed,80,-11.9307,-12.60873,-11.29348,0.0,0.49474,0.4664,0.52201

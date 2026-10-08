@@ -1,0 +1,16 @@
+level,a,b,n_paired,kl_diff_mean,kl_diff_lo,kl_diff_hi,win_b_lower_kl,cf_diff_mean,cf_diff_lo,cf_diff_hi
+0.3,euclid,dual,0,nan,nan,nan,nan,nan,nan,nan
+0.3,causal_fixed,dual,0,nan,nan,nan,nan,nan,nan,nan
+0.3,euclid,causal_fixed,0,nan,nan,nan,nan,nan,nan,nan
+0.5,euclid,dual,0,nan,nan,nan,nan,nan,nan,nan
+0.5,causal_fixed,dual,0,nan,nan,nan,nan,nan,nan,nan
+0.5,euclid,causal_fixed,0,nan,nan,nan,nan,nan,nan,nan
+0.7,euclid,dual,0,nan,nan,nan,nan,nan,nan,nan
+0.7,causal_fixed,dual,0,nan,nan,nan,nan,nan,nan,nan
+0.7,euclid,causal_fixed,0,nan,nan,nan,nan,nan,nan,nan
+0.9,euclid,dual,0,nan,nan,nan,nan,nan,nan,nan
+0.9,causal_fixed,dual,0,nan,nan,nan,nan,nan,nan,nan
+0.9,euclid,causal_fixed,0,nan,nan,nan,nan,nan,nan,nan
+0.99,euclid,dual,0,nan,nan,nan,nan,nan,nan,nan
+0.99,causal_fixed,dual,0,nan,nan,nan,nan,nan,nan,nan
+0.99,euclid,causal_fixed,0,nan,nan,nan,nan,nan,nan,nan

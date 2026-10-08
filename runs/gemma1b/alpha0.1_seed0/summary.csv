@@ -1,0 +1,16 @@
+model,method,level,n_start,n_reached,reach_rate,cf_mean,cf_lo,cf_hi,kl_mean,kl_lo,kl_hi,steps_mean
+google/gemma-3-1b-pt,euclid,0.3,80,80,1.0,0.34351,0.29605,0.38846,0.67883,0.56933,0.80461,24.7
+google/gemma-3-1b-pt,causal_fixed,0.3,80,80,1.0,0.3781,0.3349,0.42136,0.85394,0.72609,0.99331,42.3
+google/gemma-3-1b-pt,dual,0.3,80,0,0.0,nan,nan,nan,nan,nan,nan,nan
+google/gemma-3-1b-pt,euclid,0.5,80,80,1.0,0.34341,0.29826,0.38941,0.81635,0.69499,0.94547,28.4
+google/gemma-3-1b-pt,causal_fixed,0.5,80,80,1.0,0.37178,0.32793,0.41799,1.05411,0.91836,1.2069,48.6
+google/gemma-3-1b-pt,dual,0.5,80,0,0.0,nan,nan,nan,nan,nan,nan,nan
+google/gemma-3-1b-pt,euclid,0.7,80,80,1.0,0.36486,0.31633,0.41199,0.94164,0.81731,1.08643,31.9
+google/gemma-3-1b-pt,causal_fixed,0.7,80,80,1.0,0.38659,0.34127,0.43136,1.25775,1.1093,1.41437,54.8
+google/gemma-3-1b-pt,dual,0.7,80,0,0.0,nan,nan,nan,nan,nan,nan,nan
+google/gemma-3-1b-pt,euclid,0.9,80,80,1.0,0.43173,0.38353,0.48087,1.14178,1.01887,1.29714,37.7
+google/gemma-3-1b-pt,causal_fixed,0.9,80,80,1.0,0.44268,0.40114,0.48559,1.62763,1.45997,1.80189,65.0
+google/gemma-3-1b-pt,dual,0.9,80,0,0.0,nan,nan,nan,nan,nan,nan,nan
+google/gemma-3-1b-pt,euclid,0.99,80,80,1.0,0.56598,0.52335,0.60982,1.66048,1.52124,1.81956,48.2
+google/gemma-3-1b-pt,causal_fixed,0.99,80,80,1.0,0.55862,0.52022,0.59525,2.53712,2.33548,2.74538,83.5
+google/gemma-3-1b-pt,dual,0.99,80,0,0.0,nan,nan,nan,nan,nan,nan,nan

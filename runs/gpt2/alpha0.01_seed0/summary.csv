@@ -1,0 +1,16 @@
+model,method,level,n_start,n_reached,reach_rate,cf_mean,cf_lo,cf_hi,kl_mean,kl_lo,kl_hi,steps_mean
+gpt2,euclid,0.3,80,80,1.0,0.19287,0.16926,0.21872,0.67102,0.6283,0.71563,7.0
+gpt2,causal_fixed,0.3,80,0,0.0,nan,nan,nan,nan,nan,nan,nan
+gpt2,dual,0.3,80,0,0.0,nan,nan,nan,nan,nan,nan,nan
+gpt2,euclid,0.5,80,80,1.0,0.19764,0.17176,0.22315,0.77313,0.72646,0.81968,8.1
+gpt2,causal_fixed,0.5,80,0,0.0,nan,nan,nan,nan,nan,nan,nan
+gpt2,dual,0.5,80,0,0.0,nan,nan,nan,nan,nan,nan,nan
+gpt2,euclid,0.7,80,80,1.0,0.2238,0.19647,0.252,0.84678,0.79951,0.89253,9.2
+gpt2,causal_fixed,0.7,80,0,0.0,nan,nan,nan,nan,nan,nan,nan
+gpt2,dual,0.7,80,0,0.0,nan,nan,nan,nan,nan,nan,nan
+gpt2,euclid,0.9,80,80,1.0,0.30424,0.27283,0.33607,0.96715,0.92297,1.0158,11.1
+gpt2,causal_fixed,0.9,80,0,0.0,nan,nan,nan,nan,nan,nan,nan
+gpt2,dual,0.9,80,0,0.0,nan,nan,nan,nan,nan,nan,nan
+gpt2,euclid,0.99,80,80,1.0,0.49672,0.4702,0.52367,1.42657,1.35043,1.50638,14.5
+gpt2,causal_fixed,0.99,80,0,0.0,nan,nan,nan,nan,nan,nan,nan
+gpt2,dual,0.99,80,0,0.0,nan,nan,nan,nan,nan,nan,nan

@@ -1,0 +1,39 @@
+{
+ "args": {
+  "data_dir": "data/gpt2",
+  "out": "runs/gpt2/alpha0.1_seed0",
+  "synthetic": false,
+  "selftest": false,
+  "backend": "auto",
+  "device": "cuda",
+  "n_ctx": 80,
+  "min_mass": 0.15,
+  "alpha_rel": 0.1,
+  "topk": 5000,
+  "step_frac": 0.01,
+  "max_steps": 600,
+  "levels": "0.3,0.5,0.7,0.9,0.99",
+  "seed": 0,
+  "boot": 2000
+ },
+ "backend": "torch",
+ "V": 50257,
+ "d": 768,
+ "n_pairs": 143,
+ "meta": {
+  "model": "gpt2",
+  "dtype": "float32",
+  "load_in_4bit": false,
+  "V": 50257,
+  "d": 768,
+  "n_pairs": 143,
+  "logits_rel_err": 6.392812679223425e-07,
+  "seed": 0,
+  "torch": "2.6.0+cu124",
+  "transformers": "5.19.0",
+  "date": "2026-10-08T12:32:51.795743"
+ },
+ "python": "3.12.3",
+ "numpy": "2.5.3",
+ "runtime_s": 613.7
+}

@@ -1,0 +1,1201 @@
+ctx_id,text,method,level,reached,step,P1,cf,kl
+86,"At work, Many people",euclid,0.3,1,24,0.33248,0.17229,0.78457
+86,"At work, Many people",euclid,0.5,1,27,0.50626,0.17119,0.91932
+86,"At work, Many people",euclid,0.7,1,31,0.72817,0.19582,1.06976
+86,"At work, Many people",euclid,0.9,1,37,0.91833,0.28766,1.28709
+86,"At work, Many people",euclid,0.99,1,47,0.99175,0.51003,1.88304
+86,"At work, Many people",causal_fixed,0.3,1,44,0.30462,0.20736,1.25426
+86,"At work, Many people",causal_fixed,0.5,1,51,0.51823,0.16971,1.73161
+86,"At work, Many people",causal_fixed,0.7,1,58,0.72561,0.14589,2.29141
+86,"At work, Many people",causal_fixed,0.9,1,68,0.90566,0.1263,3.20819
+86,"At work, Many people",causal_fixed,0.99,1,86,0.99007,0.105,5.04965
+86,"At work, Many people",dual,0.3,0,,,,
+86,"At work, Many people",dual,0.5,0,,,,
+86,"At work, Many people",dual,0.7,0,,,,
+86,"At work, Many people",dual,0.9,0,,,,
+86,"At work, Many people",dual,0.99,0,,,,
+151,"Every day, People usually",euclid,0.3,1,10,0.31453,0.72888,0.07969
+151,"Every day, People usually",euclid,0.5,1,14,0.55159,0.7378,0.18957
+151,"Every day, People usually",euclid,0.7,1,17,0.72031,0.74928,0.31169
+151,"Every day, People usually",euclid,0.9,1,23,0.91842,0.77337,0.63332
+151,"Every day, People usually",euclid,0.99,1,32,0.99028,0.79578,1.20478
+151,"Every day, People usually",causal_fixed,0.3,1,19,0.31553,0.75179,0.13278
+151,"Every day, People usually",causal_fixed,0.5,1,25,0.50114,0.75386,0.25432
+151,"Every day, People usually",causal_fixed,0.7,1,32,0.71365,0.75664,0.45721
+151,"Every day, People usually",causal_fixed,0.9,1,42,0.90137,0.76201,0.83943
+151,"Every day, People usually",causal_fixed,0.99,1,61,0.99093,0.7703,1.73894
+151,"Every day, People usually",dual,0.3,0,,,,
+151,"Every day, People usually",dual,0.5,0,,,,
+151,"Every day, People usually",dual,0.7,0,,,,
+151,"Every day, People usually",dual,0.9,0,,,,
+151,"Every day, People usually",dual,0.99,0,,,,
+224,"Honestly, They just",euclid,0.3,1,22,0.33819,0.13189,0.84663
+224,"Honestly, They just",euclid,0.5,1,25,0.51491,0.12647,0.99744
+224,"Honestly, They just",euclid,0.7,1,29,0.73506,0.14016,1.15313
+224,"Honestly, They just",euclid,0.9,1,35,0.91874,0.2013,1.33604
+224,"Honestly, They just",euclid,0.99,1,45,0.99053,0.36372,1.79305
+224,"Honestly, They just",causal_fixed,0.3,1,41,0.30768,0.16937,1.11167
+224,"Honestly, They just",causal_fixed,0.5,1,48,0.50876,0.15812,1.39967
+224,"Honestly, They just",causal_fixed,0.7,1,55,0.70081,0.16362,1.68088
+224,"Honestly, They just",causal_fixed,0.9,1,68,0.90777,0.19356,2.30124
+224,"Honestly, They just",causal_fixed,0.99,1,91,0.9904,0.20609,3.96594
+224,"Honestly, They just",dual,0.3,0,,,,
+224,"Honestly, They just",dual,0.5,0,,,,
+224,"Honestly, They just",dual,0.7,0,,,,
+224,"Honestly, They just",dual,0.9,0,,,,
+224,"Honestly, They just",dual,0.99,0,,,,
+206,The workers never,euclid,0.3,1,21,0.30972,0.04835,0.50565
+206,The workers never,euclid,0.5,1,25,0.54006,0.04718,0.59698
+206,The workers never,euclid,0.7,1,28,0.70509,0.05321,0.63992
+206,The workers never,euclid,0.9,1,34,0.90575,0.08651,0.69422
+206,The workers never,euclid,0.99,1,45,0.99091,0.24695,0.92318
+206,The workers never,causal_fixed,0.3,1,39,0.30856,0.07363,0.54882
+206,The workers never,causal_fixed,0.5,1,46,0.52444,0.07678,0.68992
+206,The workers never,causal_fixed,0.7,1,52,0.70211,0.09112,0.8111
+206,The workers never,causal_fixed,0.9,1,63,0.90067,0.15037,1.08931
+206,The workers never,causal_fixed,0.99,1,84,0.99015,0.33221,2.14219
+206,The workers never,dual,0.3,0,,,,
+206,The workers never,dual,0.5,0,,,,
+206,The workers never,dual,0.7,0,,,,
+206,The workers never,dual,0.9,0,,,,
+206,The workers never,dual,0.99,0,,,,
+272,Students always,euclid,0.3,1,24,0.30665,0.55837,0.43329
+272,Students always,euclid,0.5,1,28,0.5496,0.55432,0.58288
+272,Students always,euclid,0.7,1,31,0.7227,0.57959,0.68821
+272,Students always,euclid,0.9,1,36,0.90182,0.65268,0.87359
+272,Students always,euclid,0.99,1,46,0.99111,0.77173,1.38797
+272,Students always,causal_fixed,0.3,1,47,0.31618,0.58224,0.70277
+272,Students always,causal_fixed,0.5,1,54,0.53165,0.55892,0.89705
+272,Students always,causal_fixed,0.7,1,60,0.70993,0.55669,1.08564
+272,Students always,causal_fixed,0.9,1,71,0.90923,0.57059,1.51641
+272,Students always,causal_fixed,0.99,1,89,0.99033,0.56349,2.4442
+272,Students always,dual,0.3,0,,,,
+272,Students always,dual,0.5,0,,,,
+272,Students always,dual,0.7,0,,,,
+272,Students always,dual,0.9,0,,,,
+272,Students always,dual,0.99,0,,,,
+56,Students usually,euclid,0.3,1,33,0.3486,0.50777,0.57195
+56,Students usually,euclid,0.5,1,36,0.53889,0.51469,0.68927
+56,Students usually,euclid,0.7,1,39,0.71774,0.54478,0.81107
+56,Students usually,euclid,0.9,1,44,0.90197,0.6209,1.04521
+56,Students usually,euclid,0.99,1,54,0.99137,0.73174,1.67931
+56,Students usually,causal_fixed,0.3,1,64,0.3106,0.41833,1.30744
+56,Students usually,causal_fixed,0.5,1,70,0.50056,0.3366,1.69892
+56,Students usually,causal_fixed,0.7,1,77,0.71921,0.26934,2.22042
+56,Students usually,causal_fixed,0.9,1,87,0.90835,0.21845,3.00804
+56,Students usually,causal_fixed,0.99,1,104,0.99036,0.18266,4.35402
+56,Students usually,dual,0.3,0,,,,
+56,Students usually,dual,0.5,0,,,,
+56,Students usually,dual,0.7,0,,,,
+56,Students usually,dual,0.9,0,,,,
+56,Students usually,dual,0.99,0,,,,
+225,"At work, They really",euclid,0.3,1,24,0.33501,0.18289,0.75352
+225,"At work, They really",euclid,0.5,1,28,0.54199,0.17771,0.92566
+225,"At work, They really",euclid,0.7,1,32,0.73382,0.1954,1.06689
+225,"At work, They really",euclid,0.9,1,38,0.90582,0.25928,1.26794
+225,"At work, They really",euclid,0.99,1,50,0.99076,0.44355,1.88859
+225,"At work, They really",causal_fixed,0.3,1,41,0.32097,0.20269,0.97285
+225,"At work, They really",causal_fixed,0.5,1,48,0.51894,0.18964,1.23826
+225,"At work, They really",causal_fixed,0.7,1,55,0.70614,0.19434,1.5087
+225,"At work, They really",causal_fixed,0.9,1,68,0.90805,0.22552,2.10082
+225,"At work, They really",causal_fixed,0.99,1,92,0.99039,0.23973,3.67923
+225,"At work, They really",dual,0.3,0,,,,
+225,"At work, They really",dual,0.5,0,,,,
+225,"At work, They really",dual,0.7,0,,,,
+225,"At work, They really",dual,0.9,0,,,,
+225,"At work, They really",dual,0.99,0,,,,
+106,"At work, The workers often",euclid,0.3,1,21,0.32538,0.37427,0.47565
+106,"At work, The workers often",euclid,0.5,1,25,0.54675,0.36994,0.62955
+106,"At work, The workers often",euclid,0.7,1,28,0.70534,0.39121,0.73384
+106,"At work, The workers often",euclid,0.9,1,34,0.90348,0.47972,0.95048
+106,"At work, The workers often",euclid,0.99,1,45,0.99101,0.65069,1.55985
+106,"At work, The workers often",causal_fixed,0.3,1,39,0.32245,0.41276,0.58363
+106,"At work, The workers often",causal_fixed,0.5,1,45,0.50071,0.39972,0.7625
+106,"At work, The workers often",causal_fixed,0.7,1,52,0.70551,0.40837,0.99446
+106,"At work, The workers often",causal_fixed,0.9,1,63,0.90414,0.45182,1.44793
+106,"At work, The workers often",causal_fixed,0.99,1,82,0.99014,0.50574,2.51324
+106,"At work, The workers often",dual,0.3,0,,,,
+106,"At work, The workers often",dual,0.5,0,,,,
+106,"At work, The workers often",dual,0.7,0,,,,
+106,"At work, The workers often",dual,0.9,0,,,,
+106,"At work, The workers often",dual,0.99,0,,,,
+233,"Every day, You really",euclid,0.3,1,24,0.34033,0.33106,0.46086
+233,"Every day, You really",euclid,0.5,1,27,0.50549,0.33521,0.54246
+233,"Every day, You really",euclid,0.7,1,31,0.71719,0.37323,0.63964
+233,"Every day, You really",euclid,0.9,1,37,0.90762,0.47926,0.80786
+233,"Every day, You really",euclid,0.99,1,48,0.99125,0.65329,1.36392
+233,"Every day, You really",causal_fixed,0.3,1,41,0.30848,0.39053,0.60884
+233,"Every day, You really",causal_fixed,0.5,1,48,0.52134,0.36232,0.86089
+233,"Every day, You really",causal_fixed,0.7,1,55,0.72447,0.35191,1.15855
+233,"Every day, You really",causal_fixed,0.9,1,65,0.90032,0.34964,1.65696
+233,"Every day, You really",causal_fixed,0.99,1,86,0.99066,0.31437,2.93605
+233,"Every day, You really",dual,0.3,0,,,,
+233,"Every day, You really",dual,0.5,0,,,,
+233,"Every day, You really",dual,0.7,0,,,,
+233,"Every day, You really",dual,0.9,0,,,,
+233,"Every day, You really",dual,0.99,0,,,,
+299,Many people,euclid,0.3,1,34,0.3366,0.04113,1.97763
+299,Many people,euclid,0.5,1,37,0.54076,0.04125,2.14363
+299,Many people,euclid,0.7,1,40,0.73143,0.04855,2.25206
+299,Many people,euclid,0.9,1,45,0.91611,0.08127,2.33319
+299,Many people,euclid,0.99,1,54,0.99228,0.23484,2.45844
+299,Many people,causal_fixed,0.3,1,64,0.3233,0.08225,2.58327
+299,Many people,causal_fixed,0.5,1,69,0.50604,0.06914,3.03043
+299,Many people,causal_fixed,0.7,1,75,0.72066,0.06093,3.62324
+299,Many people,causal_fixed,0.9,1,84,0.91307,0.05742,4.6108
+299,Many people,causal_fixed,0.99,1,99,0.99132,0.05832,6.40137
+299,Many people,dual,0.3,0,,,,
+299,Many people,dual,0.5,0,,,,
+299,Many people,dual,0.7,0,,,,
+299,Many people,dual,0.9,0,,,,
+299,Many people,dual,0.99,0,,,,
+183,"Every day, The workers still",euclid,0.3,1,22,0.30685,0.38392,0.41025
+183,"Every day, The workers still",euclid,0.5,1,26,0.52225,0.38185,0.51171
+183,"Every day, The workers still",euclid,0.7,1,30,0.72905,0.41813,0.58729
+183,"Every day, The workers still",euclid,0.9,1,36,0.91158,0.5209,0.71059
+183,"Every day, The workers still",euclid,0.99,1,47,0.99152,0.68789,1.17402
+183,"Every day, The workers still",causal_fixed,0.3,1,39,0.32437,0.361,0.6322
+183,"Every day, The workers still",causal_fixed,0.5,1,45,0.51372,0.34895,0.81014
+183,"Every day, The workers still",causal_fixed,0.7,1,52,0.72645,0.36562,1.03445
+183,"Every day, The workers still",causal_fixed,0.9,1,62,0.9085,0.4257,1.41653
+183,"Every day, The workers still",causal_fixed,0.99,1,80,0.99067,0.52781,2.3303
+183,"Every day, The workers still",dual,0.3,0,,,,
+183,"Every day, The workers still",dual,0.5,0,,,,
+183,"Every day, The workers still",dual,0.7,0,,,,
+183,"Every day, The workers still",dual,0.9,0,,,,
+183,"Every day, The workers still",dual,0.99,0,,,,
+34,"Every day, They always",euclid,0.3,1,22,0.32122,0.52996,0.39194
+34,"Every day, They always",euclid,0.5,1,26,0.54336,0.5215,0.49291
+34,"Every day, They always",euclid,0.7,1,29,0.70271,0.54066,0.54673
+34,"Every day, They always",euclid,0.9,1,35,0.90181,0.61748,0.64182
+34,"Every day, They always",euclid,0.99,1,46,0.99046,0.73389,0.96627
+34,"Every day, They always",causal_fixed,0.3,1,43,0.32472,0.46836,0.67536
+34,"Every day, They always",causal_fixed,0.5,1,50,0.52351,0.40765,0.92062
+34,"Every day, They always",causal_fixed,0.7,1,57,0.71411,0.36372,1.19156
+34,"Every day, They always",causal_fixed,0.9,1,69,0.90982,0.31731,1.70765
+34,"Every day, They always",causal_fixed,0.99,1,89,0.99007,0.27049,2.67454
+34,"Every day, They always",dual,0.3,0,,,,
+34,"Every day, They always",dual,0.5,0,,,,
+34,"Every day, They always",dual,0.7,0,,,,
+34,"Every day, They always",dual,0.9,0,,,,
+34,"Every day, They always",dual,0.99,0,,,,
+10,"At work, We always",euclid,0.3,1,29,0.32725,0.45176,0.62831
+10,"At work, We always",euclid,0.5,1,33,0.55111,0.44737,0.74489
+10,"At work, We always",euclid,0.7,1,36,0.71008,0.47318,0.79562
+10,"At work, We always",euclid,0.9,1,42,0.90597,0.57471,0.8487
+10,"At work, We always",euclid,0.99,1,53,0.9912,0.75141,1.06356
+10,"At work, We always",causal_fixed,0.3,1,54,0.31243,0.41913,0.88335
+10,"At work, We always",causal_fixed,0.5,1,61,0.51826,0.36328,1.14828
+10,"At work, We always",causal_fixed,0.7,1,68,0.71732,0.32651,1.42901
+10,"At work, We always",causal_fixed,0.9,1,79,0.90645,0.29373,1.89663
+10,"At work, We always",causal_fixed,0.99,1,99,0.99075,0.25673,2.83083
+10,"At work, We always",dual,0.3,0,,,,
+10,"At work, We always",dual,0.5,0,,,,
+10,"At work, We always",dual,0.7,0,,,,
+10,"At work, We always",dual,0.9,0,,,,
+10,"At work, We always",dual,0.99,0,,,,
+93,"Honestly, I often",euclid,0.3,1,31,0.31277,0.17924,1.29415
+93,"Honestly, I often",euclid,0.5,1,34,0.50196,0.17055,1.53085
+93,"Honestly, I often",euclid,0.7,1,38,0.74219,0.18683,1.80949
+93,"Honestly, I often",euclid,0.9,1,43,0.91285,0.24375,2.11678
+93,"Honestly, I often",euclid,0.99,1,52,0.99004,0.38449,2.75599
+93,"Honestly, I often",causal_fixed,0.3,1,60,0.31751,0.20472,2.04437
+93,"Honestly, I often",causal_fixed,0.5,1,66,0.51727,0.18701,2.47219
+93,"Honestly, I often",causal_fixed,0.7,1,72,0.71037,0.18733,2.91471
+93,"Honestly, I often",causal_fixed,0.9,1,82,0.90538,0.20986,3.69715
+93,"Honestly, I often",causal_fixed,0.99,1,100,0.99038,0.24369,5.3447
+93,"Honestly, I often",dual,0.3,0,,,,
+93,"Honestly, I often",dual,0.5,0,,,,
+93,"Honestly, I often",dual,0.7,0,,,,
+93,"Honestly, I often",dual,0.9,0,,,,
+93,"Honestly, I often",dual,0.99,0,,,,
+228,"Honestly, You never",euclid,0.3,1,28,0.3031,0.13135,0.89391
+228,"Honestly, You never",euclid,0.5,1,32,0.52401,0.12642,1.01422
+228,"Honestly, You never",euclid,0.7,1,36,0.73454,0.14455,1.06102
+228,"Honestly, You never",euclid,0.9,1,42,0.91534,0.21611,1.03042
+228,"Honestly, You never",euclid,0.99,1,53,0.99168,0.4413,1.0639
+228,"Honestly, You never",causal_fixed,0.3,1,53,0.30842,0.14965,0.95811
+228,"Honestly, You never",causal_fixed,0.5,1,60,0.50932,0.13606,1.13857
+228,"Honestly, You never",causal_fixed,0.7,1,67,0.70409,0.13571,1.30055
+228,"Honestly, You never",causal_fixed,0.9,1,79,0.90371,0.14595,1.62149
+228,"Honestly, You never",causal_fixed,0.99,1,102,0.99039,0.13109,2.6815
+228,"Honestly, You never",dual,0.3,0,,,,
+228,"Honestly, You never",dual,0.5,0,,,,
+228,"Honestly, You never",dual,0.7,0,,,,
+228,"Honestly, You never",dual,0.9,0,,,,
+228,"Honestly, You never",dual,0.99,0,,,,
+256,"Honestly, Many people often",euclid,0.3,1,15,0.30794,0.56216,0.20258
+256,"Honestly, Many people often",euclid,0.5,1,19,0.54404,0.57297,0.38089
+256,"Honestly, Many people often",euclid,0.7,1,22,0.71399,0.59243,0.56461
+256,"Honestly, Many people often",euclid,0.9,1,28,0.91581,0.64182,1.04365
+256,"Honestly, Many people often",euclid,0.99,1,38,0.99202,0.69797,2.02884
+256,"Honestly, Many people often",causal_fixed,0.3,1,30,0.31229,0.64284,0.39696
+256,"Honestly, Many people often",causal_fixed,0.5,1,37,0.51563,0.64419,0.64371
+256,"Honestly, Many people often",causal_fixed,0.7,1,44,0.71293,0.65116,0.96549
+256,"Honestly, Many people often",causal_fixed,0.9,1,55,0.90342,0.66953,1.60004
+256,"Honestly, Many people often",causal_fixed,0.99,1,75,0.99059,0.68858,2.98969
+256,"Honestly, Many people often",dual,0.3,0,,,,
+256,"Honestly, Many people often",dual,0.5,0,,,,
+256,"Honestly, Many people often",dual,0.7,0,,,,
+256,"Honestly, Many people often",dual,0.9,0,,,,
+256,"Honestly, Many people often",dual,0.99,0,,,,
+140,"At work, Many people often",euclid,0.3,1,27,0.30626,0.59213,0.38782
+140,"At work, Many people often",euclid,0.5,1,31,0.52326,0.58456,0.52549
+140,"At work, Many people often",euclid,0.7,1,35,0.73118,0.60534,0.67187
+140,"At work, Many people often",euclid,0.9,1,41,0.91327,0.66465,0.92479
+140,"At work, Many people often",euclid,0.99,1,52,0.99186,0.74775,1.5259
+140,"At work, Many people often",causal_fixed,0.3,1,52,0.3251,0.57148,0.71855
+140,"At work, Many people often",causal_fixed,0.5,1,59,0.52963,0.51691,0.97723
+140,"At work, Many people often",causal_fixed,0.7,1,65,0.70037,0.48344,1.24056
+140,"At work, Many people often",causal_fixed,0.9,1,77,0.91033,0.44962,1.85412
+140,"At work, Many people often",causal_fixed,0.99,1,96,0.99063,0.4273,2.94524
+140,"At work, Many people often",dual,0.3,0,,,,
+140,"At work, Many people often",dual,0.5,0,,,,
+140,"At work, Many people often",dual,0.7,0,,,,
+140,"At work, Many people often",dual,0.9,0,,,,
+140,"At work, Many people often",dual,0.99,0,,,,
+167,"Every day, You usually",euclid,0.3,1,28,0.30152,0.43583,0.51517
+167,"Every day, You usually",euclid,0.5,1,32,0.50887,0.42869,0.6503
+167,"Every day, You usually",euclid,0.7,1,36,0.71232,0.45437,0.76859
+167,"Every day, You usually",euclid,0.9,1,42,0.90055,0.5317,0.94082
+167,"Every day, You usually",euclid,0.99,1,54,0.99141,0.666,1.43759
+167,"Every day, You usually",causal_fixed,0.3,1,53,0.30745,0.31493,1.18466
+167,"Every day, You usually",causal_fixed,0.5,1,60,0.502,0.23562,1.66586
+167,"Every day, You usually",causal_fixed,0.7,1,68,0.71991,0.17998,2.24017
+167,"Every day, You usually",causal_fixed,0.9,1,79,0.90268,0.14377,2.98874
+167,"Every day, You usually",causal_fixed,0.99,1,100,0.99058,0.11985,4.31564
+167,"Every day, You usually",dual,0.3,0,,,,
+167,"Every day, You usually",dual,0.5,0,,,,
+167,"Every day, You usually",dual,0.7,0,,,,
+167,"Every day, You usually",dual,0.9,0,,,,
+167,"Every day, You usually",dual,0.99,0,,,,
+17,"Every day, We sometimes",euclid,0.3,1,28,0.34956,0.55979,0.46569
+17,"Every day, We sometimes",euclid,0.5,1,31,0.52509,0.5595,0.5956
+17,"Every day, We sometimes",euclid,0.7,1,35,0.74179,0.5845,0.78331
+17,"Every day, We sometimes",euclid,0.9,1,40,0.90334,0.6346,1.04225
+17,"Every day, We sometimes",euclid,0.99,1,51,0.99147,0.7103,1.72992
+17,"Every day, We sometimes",causal_fixed,0.3,1,52,0.30368,0.50972,0.9279
+17,"Every day, We sometimes",causal_fixed,0.5,1,59,0.51193,0.41889,1.35943
+17,"Every day, We sometimes",causal_fixed,0.7,1,66,0.7151,0.34941,1.84881
+17,"Every day, We sometimes",causal_fixed,0.9,1,77,0.90715,0.2863,2.63698
+17,"Every day, We sometimes",causal_fixed,0.99,1,97,0.991,0.23728,4.07369
+17,"Every day, We sometimes",dual,0.3,0,,,,
+17,"Every day, We sometimes",dual,0.5,0,,,,
+17,"Every day, We sometimes",dual,0.7,0,,,,
+17,"Every day, We sometimes",dual,0.9,0,,,,
+17,"Every day, We sometimes",dual,0.99,0,,,,
+111,We sometimes,euclid,0.3,1,40,0.33533,0.36845,1.12371
+111,We sometimes,euclid,0.5,1,43,0.52404,0.37505,1.30789
+111,We sometimes,euclid,0.7,1,46,0.70344,0.40531,1.4856
+111,We sometimes,euclid,0.9,1,52,0.91344,0.50461,1.86857
+111,We sometimes,euclid,0.99,1,62,0.99111,0.63316,2.71448
+111,We sometimes,causal_fixed,0.3,1,75,0.32291,0.16959,2.85862
+111,We sometimes,causal_fixed,0.5,1,81,0.52088,0.11252,3.63581
+111,We sometimes,causal_fixed,0.7,1,87,0.70951,0.08326,4.38122
+111,We sometimes,causal_fixed,0.9,1,97,0.90122,0.06344,5.49893
+111,We sometimes,causal_fixed,0.99,1,116,0.99031,0.05428,7.38924
+111,We sometimes,dual,0.3,0,,,,
+111,We sometimes,dual,0.5,0,,,,
+111,We sometimes,dual,0.7,0,,,,
+111,We sometimes,dual,0.9,0,,,,
+111,We sometimes,dual,0.99,0,,,,
+216,"Every day, I just",euclid,0.3,1,36,0.33137,0.13644,1.49037
+216,"Every day, I just",euclid,0.5,1,39,0.50717,0.13601,1.61279
+216,"Every day, I just",euclid,0.7,1,43,0.72903,0.15866,1.68921
+216,"Every day, I just",euclid,0.9,1,49,0.91678,0.24344,1.68854
+216,"Every day, I just",euclid,0.99,1,59,0.99058,0.46555,1.78501
+216,"Every day, I just",causal_fixed,0.3,1,71,0.3039,0.0697,3.05935
+216,"Every day, I just",causal_fixed,0.5,1,78,0.50112,0.04396,3.67949
+216,"Every day, I just",causal_fixed,0.7,1,86,0.72171,0.02978,4.33953
+216,"Every day, I just",causal_fixed,0.9,1,97,0.90514,0.02196,5.1815
+216,"Every day, I just",causal_fixed,0.99,1,117,0.99039,0.01777,6.61791
+216,"Every day, I just",dual,0.3,0,,,,
+216,"Every day, I just",dual,0.5,0,,,,
+216,"Every day, I just",dual,0.7,0,,,,
+216,"Every day, I just",dual,0.9,0,,,,
+216,"Every day, I just",dual,0.99,0,,,,
+239,The workers usually,euclid,0.3,1,25,0.31388,0.28629,0.76652
+239,The workers usually,euclid,0.5,1,29,0.55514,0.27845,0.93012
+239,The workers usually,euclid,0.7,1,32,0.72521,0.30095,1.01068
+239,The workers usually,euclid,0.9,1,37,0.90112,0.38262,1.10727
+239,The workers usually,euclid,0.99,1,47,0.99046,0.58971,1.45024
+239,The workers usually,causal_fixed,0.3,1,45,0.30036,0.32658,0.88891
+239,The workers usually,causal_fixed,0.5,1,52,0.53485,0.31001,1.11901
+239,The workers usually,causal_fixed,0.7,1,58,0.72857,0.32281,1.3231
+239,The workers usually,causal_fixed,0.9,1,67,0.90588,0.36984,1.6884
+239,The workers usually,causal_fixed,0.99,1,84,0.99087,0.44771,2.64228
+239,The workers usually,dual,0.3,0,,,,
+239,The workers usually,dual,0.5,0,,,,
+239,The workers usually,dual,0.7,0,,,,
+239,The workers usually,dual,0.9,0,,,,
+239,The workers usually,dual,0.99,0,,,,
+83,"Honestly, They never",euclid,0.3,1,22,0.31977,0.07497,0.55551
+83,"Honestly, They never",euclid,0.5,1,26,0.52581,0.07627,0.63926
+83,"Honestly, They never",euclid,0.7,1,30,0.71868,0.09099,0.69071
+83,"Honestly, They never",euclid,0.9,1,37,0.91276,0.15545,0.78084
+83,"Honestly, They never",euclid,0.99,1,49,0.99057,0.37399,1.23233
+83,"Honestly, They never",causal_fixed,0.3,1,42,0.30257,0.09678,0.82685
+83,"Honestly, They never",causal_fixed,0.5,1,50,0.50248,0.10086,1.03649
+83,"Honestly, They never",causal_fixed,0.7,1,59,0.7173,0.12392,1.27511
+83,"Honestly, They never",causal_fixed,0.9,1,72,0.90285,0.19228,1.71726
+83,"Honestly, They never",causal_fixed,0.99,1,96,0.99003,0.34016,3.10819
+83,"Honestly, They never",dual,0.3,0,,,,
+83,"Honestly, They never",dual,0.5,0,,,,
+83,"Honestly, They never",dual,0.7,0,,,,
+83,"Honestly, They never",dual,0.9,0,,,,
+83,"Honestly, They never",dual,0.99,0,,,,
+116,"Every day, Many people sometimes",euclid,0.3,1,19,0.30725,0.36161,0.43696
+116,"Every day, Many people sometimes",euclid,0.5,1,23,0.54205,0.35675,0.61194
+116,"Every day, Many people sometimes",euclid,0.7,1,26,0.71141,0.3794,0.74063
+116,"Every day, Many people sometimes",euclid,0.9,1,32,0.91381,0.47041,1.01829
+116,"Every day, Many people sometimes",euclid,0.99,1,42,0.99148,0.61702,1.67244
+116,"Every day, Many people sometimes",causal_fixed,0.3,1,37,0.32501,0.37176,0.71001
+116,"Every day, Many people sometimes",causal_fixed,0.5,1,43,0.51095,0.34951,0.96216
+116,"Every day, Many people sometimes",causal_fixed,0.7,1,50,0.72095,0.34841,1.288
+116,"Every day, Many people sometimes",causal_fixed,0.9,1,60,0.90431,0.37612,1.81812
+116,"Every day, Many people sometimes",causal_fixed,0.99,1,79,0.99112,0.42804,3.06441
+116,"Every day, Many people sometimes",dual,0.3,0,,,,
+116,"Every day, Many people sometimes",dual,0.5,0,,,,
+116,"Every day, Many people sometimes",dual,0.7,0,,,,
+116,"Every day, Many people sometimes",dual,0.9,0,,,,
+116,"Every day, Many people sometimes",dual,0.99,0,,,,
+119,"Honestly, I still",euclid,0.3,1,33,0.31854,0.0523,1.39253
+119,"Honestly, I still",euclid,0.5,1,36,0.50641,0.04819,1.63089
+119,"Honestly, I still",euclid,0.7,1,40,0.74465,0.05107,1.94123
+119,"Honestly, I still",euclid,0.9,1,45,0.91444,0.06527,2.32393
+119,"Honestly, I still",euclid,0.99,1,54,0.9908,0.10655,3.09257
+119,"Honestly, I still",causal_fixed,0.3,1,62,0.31506,0.07636,2.18166
+119,"Honestly, I still",causal_fixed,0.5,1,68,0.51791,0.06069,2.70837
+119,"Honestly, I still",causal_fixed,0.7,1,74,0.71513,0.05405,3.2574
+119,"Honestly, I still",causal_fixed,0.9,1,84,0.91161,0.05366,4.21155
+119,"Honestly, I still",causal_fixed,0.99,1,101,0.99109,0.0595,5.98724
+119,"Honestly, I still",dual,0.3,0,,,,
+119,"Honestly, I still",dual,0.5,0,,,,
+119,"Honestly, I still",dual,0.7,0,,,,
+119,"Honestly, I still",dual,0.9,0,,,,
+119,"Honestly, I still",dual,0.99,0,,,,
+32,I rarely,euclid,0.3,1,38,0.31383,0.16538,1.50629
+32,I rarely,euclid,0.5,1,41,0.50326,0.16351,1.65444
+32,I rarely,euclid,0.7,1,45,0.74248,0.18963,1.77454
+32,I rarely,euclid,0.9,1,50,0.91215,0.26279,1.84585
+32,I rarely,euclid,0.99,1,60,0.9919,0.45216,2.09935
+32,I rarely,causal_fixed,0.3,1,73,0.32386,0.11173,2.65434
+32,I rarely,causal_fixed,0.5,1,79,0.52428,0.07832,3.21444
+32,I rarely,causal_fixed,0.7,1,85,0.71489,0.06011,3.7538
+32,I rarely,causal_fixed,0.9,1,95,0.90591,0.04685,4.58409
+32,I rarely,causal_fixed,0.99,1,113,0.99023,0.03923,5.96597
+32,I rarely,dual,0.3,0,,,,
+32,I rarely,dual,0.5,0,,,,
+32,I rarely,dual,0.7,0,,,,
+32,I rarely,dual,0.9,0,,,,
+32,I rarely,dual,0.99,0,,,,
+182,"At work, People never",euclid,0.3,1,18,0.33074,0.44331,0.34112
+182,"At work, People never",euclid,0.5,1,21,0.50232,0.4396,0.41658
+182,"At work, People never",euclid,0.7,1,25,0.72211,0.4736,0.49141
+182,"At work, People never",euclid,0.9,1,31,0.91345,0.57768,0.61044
+182,"At work, People never",euclid,0.99,1,41,0.99036,0.72913,1.00958
+182,"At work, People never",causal_fixed,0.3,1,33,0.30246,0.47111,0.37516
+182,"At work, People never",causal_fixed,0.5,1,40,0.5118,0.45787,0.50918
+182,"At work, People never",causal_fixed,0.7,1,47,0.71577,0.47207,0.65403
+182,"At work, People never",causal_fixed,0.9,1,58,0.90741,0.51583,0.9645
+182,"At work, People never",causal_fixed,0.99,1,78,0.99068,0.53981,1.85186
+182,"At work, People never",dual,0.3,0,,,,
+182,"At work, People never",dual,0.5,0,,,,
+182,"At work, People never",dual,0.7,0,,,,
+182,"At work, People never",dual,0.9,0,,,,
+182,"At work, People never",dual,0.99,0,,,,
+138,I really,euclid,0.3,1,36,0.33131,0.05633,1.5845
+138,I really,euclid,0.5,1,40,0.55316,0.0497,1.81308
+138,I really,euclid,0.7,1,43,0.71071,0.04988,1.94812
+138,I really,euclid,0.9,1,49,0.90603,0.05961,2.15063
+138,I really,euclid,0.99,1,60,0.99152,0.09348,2.51697
+138,I really,causal_fixed,0.3,1,54,0.30835,0.04588,1.65415
+138,I really,causal_fixed,0.5,1,60,0.52265,0.04082,1.80944
+138,I really,causal_fixed,0.7,1,66,0.72765,0.04269,1.90057
+138,I really,causal_fixed,0.9,1,75,0.90937,0.0556,1.99087
+138,I really,causal_fixed,0.99,1,92,0.99125,0.09464,2.2826
+138,I really,dual,0.3,0,,,,
+138,I really,dual,0.5,0,,,,
+138,I really,dual,0.7,0,,,,
+138,I really,dual,0.9,0,,,,
+138,I really,dual,0.99,0,,,,
+297,Many people usually,euclid,0.3,1,25,0.30753,0.59185,0.36368
+297,Many people usually,euclid,0.5,1,29,0.56084,0.60597,0.55146
+297,Many people usually,euclid,0.7,1,32,0.73747,0.63356,0.73089
+297,Many people usually,euclid,0.9,1,37,0.91194,0.68903,1.10517
+297,Many people usually,euclid,0.99,1,46,0.99052,0.75482,1.94029
+297,Many people usually,causal_fixed,0.3,1,49,0.31787,0.63602,0.76647
+297,Many people usually,causal_fixed,0.5,1,55,0.51002,0.61199,1.01689
+297,Many people usually,causal_fixed,0.7,1,62,0.72635,0.59231,1.38548
+297,Many people usually,causal_fixed,0.9,1,72,0.91015,0.57586,2.03754
+297,Many people usually,causal_fixed,0.99,1,89,0.9902,0.54774,3.3531
+297,Many people usually,dual,0.3,0,,,,
+297,Many people usually,dual,0.5,0,,,,
+297,Many people usually,dual,0.7,0,,,,
+297,Many people usually,dual,0.9,0,,,,
+297,Many people usually,dual,0.99,0,,,,
+253,"Honestly, Students sometimes",euclid,0.3,1,14,0.30039,0.48663,0.20224
+253,"Honestly, Students sometimes",euclid,0.5,1,18,0.54488,0.4954,0.3694
+253,"Honestly, Students sometimes",euclid,0.7,1,21,0.72038,0.51999,0.5371
+253,"Honestly, Students sometimes",euclid,0.9,1,26,0.9018,0.57484,0.9002
+253,"Honestly, Students sometimes",euclid,0.99,1,36,0.99124,0.64788,1.84901
+253,"Honestly, Students sometimes",causal_fixed,0.3,1,28,0.32005,0.56884,0.36018
+253,"Honestly, Students sometimes",causal_fixed,0.5,1,34,0.506,0.56567,0.57666
+253,"Honestly, Students sometimes",causal_fixed,0.7,1,41,0.71588,0.5681,0.90619
+253,"Honestly, Students sometimes",causal_fixed,0.9,1,51,0.90008,0.57589,1.49953
+253,"Honestly, Students sometimes",causal_fixed,0.99,1,71,0.99112,0.56644,2.95984
+253,"Honestly, Students sometimes",dual,0.3,0,,,,
+253,"Honestly, Students sometimes",dual,0.5,0,,,,
+253,"Honestly, Students sometimes",dual,0.7,0,,,,
+253,"Honestly, Students sometimes",dual,0.9,0,,,,
+253,"Honestly, Students sometimes",dual,0.99,0,,,,
+1,You also,euclid,0.3,1,33,0.30184,0.12281,1.08655
+1,You also,euclid,0.5,1,37,0.53219,0.12073,1.19839
+1,You also,euclid,0.7,1,40,0.70114,0.13481,1.22821
+1,You also,euclid,0.9,1,46,0.90832,0.20732,1.18739
+1,You also,euclid,0.99,1,56,0.99064,0.4354,1.13971
+1,You also,causal_fixed,0.3,1,61,0.31686,0.17658,1.30606
+1,You also,causal_fixed,0.5,1,67,0.5042,0.15767,1.58156
+1,You also,causal_fixed,0.7,1,74,0.71611,0.15215,1.88976
+1,You also,causal_fixed,0.9,1,84,0.9006,0.1591,2.33234
+1,You also,causal_fixed,0.99,1,104,0.99072,0.15878,3.4568
+1,You also,dual,0.3,0,,,,
+1,You also,dual,0.5,0,,,,
+1,You also,dual,0.7,0,,,,
+1,You also,dual,0.9,0,,,,
+1,You also,dual,0.99,0,,,,
+262,"At work, I sometimes",euclid,0.3,1,34,0.32134,0.42872,0.80777
+262,"At work, I sometimes",euclid,0.5,1,37,0.50636,0.42384,0.96882
+262,"At work, I sometimes",euclid,0.7,1,41,0.7396,0.45432,1.17932
+262,"At work, I sometimes",euclid,0.9,1,46,0.90846,0.52759,1.44672
+262,"At work, I sometimes",euclid,0.99,1,56,0.99111,0.65403,2.06684
+262,"At work, I sometimes",causal_fixed,0.3,1,64,0.30681,0.24267,1.8314
+262,"At work, I sometimes",causal_fixed,0.5,1,71,0.533,0.16307,2.52354
+262,"At work, I sometimes",causal_fixed,0.7,1,77,0.71791,0.12449,3.12613
+262,"At work, I sometimes",causal_fixed,0.9,1,87,0.90463,0.09411,4.06238
+262,"At work, I sometimes",causal_fixed,0.99,1,106,0.99084,0.07413,5.6485
+262,"At work, I sometimes",dual,0.3,0,,,,
+262,"At work, I sometimes",dual,0.5,0,,,,
+262,"At work, I sometimes",dual,0.7,0,,,,
+262,"At work, I sometimes",dual,0.9,0,,,,
+262,"At work, I sometimes",dual,0.99,0,,,,
+2,"At work, I really",euclid,0.3,1,35,0.34327,0.09828,1.75483
+2,"At work, I really",euclid,0.5,1,38,0.51574,0.0896,1.93052
+2,"At work, I really",euclid,0.7,1,42,0.73281,0.09075,2.10153
+2,"At work, I really",euclid,0.9,1,48,0.91842,0.11173,2.28218
+2,"At work, I really",euclid,0.99,1,58,0.99145,0.1685,2.61729
+2,"At work, I really",causal_fixed,0.3,1,56,0.31162,0.08583,1.814
+2,"At work, I really",causal_fixed,0.5,1,62,0.51977,0.07138,2.07893
+2,"At work, I really",causal_fixed,0.7,1,68,0.71891,0.06593,2.332
+2,"At work, I really",causal_fixed,0.9,1,77,0.90006,0.06467,2.74723
+2,"At work, I really",causal_fixed,0.99,1,96,0.99065,0.05537,3.87766
+2,"At work, I really",dual,0.3,0,,,,
+2,"At work, I really",dual,0.5,0,,,,
+2,"At work, I really",dual,0.7,0,,,,
+2,"At work, I really",dual,0.9,0,,,,
+2,"At work, I really",dual,0.99,0,,,,
+281,"Every day, People always",euclid,0.3,1,10,0.32017,0.72961,0.07595
+281,"Every day, People always",euclid,0.5,1,14,0.54927,0.74186,0.16594
+281,"Every day, People always",euclid,0.7,1,17,0.71302,0.7604,0.26056
+281,"Every day, People always",euclid,0.9,1,23,0.91156,0.80246,0.51157
+281,"Every day, People always",euclid,0.99,1,33,0.99095,0.84212,1.04561
+281,"Every day, People always",causal_fixed,0.3,1,19,0.32056,0.74786,0.1289
+281,"Every day, People always",causal_fixed,0.5,1,26,0.52911,0.75246,0.25227
+281,"Every day, People always",causal_fixed,0.7,1,32,0.70196,0.7626,0.39373
+281,"Every day, People always",causal_fixed,0.9,1,43,0.9008,0.78616,0.72782
+281,"Every day, People always",causal_fixed,0.99,1,63,0.99051,0.80481,1.50414
+281,"Every day, People always",dual,0.3,0,,,,
+281,"Every day, People always",dual,0.5,0,,,,
+281,"Every day, People always",dual,0.7,0,,,,
+281,"Every day, People always",dual,0.9,0,,,,
+281,"Every day, People always",dual,0.99,0,,,,
+13,"Honestly, The workers often",euclid,0.3,1,16,0.30912,0.33599,0.36165
+13,"Honestly, The workers often",euclid,0.5,1,20,0.54521,0.33385,0.5264
+13,"Honestly, The workers often",euclid,0.7,1,23,0.71411,0.35819,0.64995
+13,"Honestly, The workers often",euclid,0.9,1,29,0.9143,0.4532,0.93869
+13,"Honestly, The workers often",euclid,0.99,1,39,0.9912,0.607,1.67916
+13,"Honestly, The workers often",causal_fixed,0.3,1,30,0.30135,0.41045,0.49183
+13,"Honestly, The workers often",causal_fixed,0.5,1,37,0.51796,0.40987,0.73232
+13,"Honestly, The workers often",causal_fixed,0.7,1,43,0.70074,0.43349,0.97448
+13,"Honestly, The workers often",causal_fixed,0.9,1,54,0.90624,0.50964,1.54019
+13,"Honestly, The workers often",causal_fixed,0.99,1,73,0.99071,0.60432,2.89351
+13,"Honestly, The workers often",dual,0.3,0,,,,
+13,"Honestly, The workers often",dual,0.5,0,,,,
+13,"Honestly, The workers often",dual,0.7,0,,,,
+13,"Honestly, The workers often",dual,0.9,0,,,,
+13,"Honestly, The workers often",dual,0.99,0,,,,
+187,"At work, Many people usually",euclid,0.3,1,19,0.30226,0.64972,0.20488
+187,"At work, Many people usually",euclid,0.5,1,23,0.5293,0.65514,0.32022
+187,"At work, Many people usually",euclid,0.7,1,27,0.74421,0.68331,0.46475
+187,"At work, Many people usually",euclid,0.9,1,32,0.90469,0.7308,0.69272
+187,"At work, Many people usually",euclid,0.99,1,43,0.992,0.79988,1.34258
+187,"At work, Many people usually",causal_fixed,0.3,1,36,0.30815,0.67937,0.36015
+187,"At work, Many people usually",causal_fixed,0.5,1,43,0.51846,0.65845,0.54619
+187,"At work, Many people usually",causal_fixed,0.7,1,50,0.72198,0.64485,0.78844
+187,"At work, Many people usually",causal_fixed,0.9,1,60,0.90105,0.63446,1.22386
+187,"At work, Many people usually",causal_fixed,0.99,1,80,0.99107,0.60913,2.28594
+187,"At work, Many people usually",dual,0.3,0,,,,
+187,"At work, Many people usually",dual,0.5,0,,,,
+187,"At work, Many people usually",dual,0.7,0,,,,
+187,"At work, Many people usually",dual,0.9,0,,,,
+187,"At work, Many people usually",dual,0.99,0,,,,
+273,"Every day, Many people usually",euclid,0.3,1,18,0.3251,0.65679,0.20002
+273,"Every day, Many people usually",euclid,0.5,1,21,0.50021,0.65985,0.29917
+273,"Every day, Many people usually",euclid,0.7,1,25,0.72591,0.68121,0.47086
+273,"Every day, Many people usually",euclid,0.9,1,31,0.91898,0.72724,0.80102
+273,"Every day, Many people usually",euclid,0.99,1,41,0.99209,0.77732,1.46755
+273,"Every day, Many people usually",causal_fixed,0.3,1,34,0.31537,0.67909,0.35061
+273,"Every day, Many people usually",causal_fixed,0.5,1,41,0.53107,0.66428,0.55304
+273,"Every day, Many people usually",causal_fixed,0.7,1,47,0.71054,0.6609,0.77473
+273,"Every day, Many people usually",causal_fixed,0.9,1,58,0.91087,0.67189,1.2785
+273,"Every day, Many people usually",causal_fixed,0.99,1,76,0.99085,0.69558,2.27929
+273,"Every day, Many people usually",dual,0.3,0,,,,
+273,"Every day, Many people usually",dual,0.5,0,,,,
+273,"Every day, Many people usually",dual,0.7,0,,,,
+273,"Every day, Many people usually",dual,0.9,0,,,,
+273,"Every day, Many people usually",dual,0.99,0,,,,
+118,We never,euclid,0.3,1,33,0.33045,0.03977,1.33165
+118,We never,euclid,0.5,1,36,0.50564,0.04115,1.43327
+118,We never,euclid,0.7,1,40,0.72484,0.05206,1.50536
+118,We never,euclid,0.9,1,46,0.91156,0.09582,1.51899
+118,We never,euclid,0.99,1,57,0.99088,0.30036,1.66533
+118,We never,causal_fixed,0.3,1,63,0.32484,0.04164,1.73997
+118,We never,causal_fixed,0.5,1,70,0.52546,0.04344,1.9568
+118,We never,causal_fixed,0.7,1,77,0.71193,0.05095,2.16327
+118,We never,causal_fixed,0.9,1,89,0.90255,0.07158,2.61864
+118,We never,causal_fixed,0.99,1,112,0.99061,0.08949,4.18679
+118,We never,dual,0.3,0,,,,
+118,We never,dual,0.5,0,,,,
+118,We never,dual,0.7,0,,,,
+118,We never,dual,0.9,0,,,,
+118,We never,dual,0.99,0,,,,
+12,They really,euclid,0.3,1,28,0.33871,0.08011,1.3184
+12,They really,euclid,0.5,1,31,0.50586,0.07721,1.47636
+12,They really,euclid,0.7,1,35,0.71737,0.08609,1.6324
+12,They really,euclid,0.9,1,41,0.90515,0.12742,1.81346
+12,They really,euclid,0.99,1,53,0.99146,0.30368,2.34385
+12,They really,causal_fixed,0.3,1,49,0.30508,0.10733,1.71171
+12,They really,causal_fixed,0.5,1,57,0.52653,0.09913,2.11266
+12,They really,causal_fixed,0.7,1,64,0.70573,0.1036,2.45529
+12,They really,causal_fixed,0.9,1,77,0.90069,0.12505,3.19694
+12,They really,causal_fixed,0.99,1,103,0.99079,0.1366,5.40126
+12,They really,dual,0.3,0,,,,
+12,They really,dual,0.5,0,,,,
+12,They really,dual,0.7,0,,,,
+12,They really,dual,0.9,0,,,,
+12,They really,dual,0.99,0,,,,
+266,"Honestly, I",euclid,0.3,1,41,0.33667,0.00034,3.34431
+266,"Honestly, I",euclid,0.5,1,44,0.51934,0.00025,3.69842
+266,"Honestly, I",euclid,0.7,1,48,0.74575,0.0002,4.14211
+266,"Honestly, I",euclid,0.9,1,53,0.90952,0.0002,4.65064
+266,"Honestly, I",euclid,0.99,1,63,0.991,0.00026,5.58774
+266,"Honestly, I",causal_fixed,0.3,1,75,0.32794,0.00072,3.44256
+266,"Honestly, I",causal_fixed,0.5,1,81,0.52925,0.00058,3.80574
+266,"Honestly, I",causal_fixed,0.7,1,87,0.72012,0.00056,4.15517
+266,"Honestly, I",causal_fixed,0.9,1,97,0.90934,0.00071,4.70426
+266,"Honestly, I",causal_fixed,0.99,1,115,0.99082,0.00157,5.65019
+266,"Honestly, I",dual,0.3,0,,,,
+266,"Honestly, I",dual,0.5,0,,,,
+266,"Honestly, I",dual,0.7,0,,,,
+266,"Honestly, I",dual,0.9,0,,,,
+266,"Honestly, I",dual,0.99,0,,,,
+51,"Every day, They also",euclid,0.3,1,16,0.34646,0.49872,0.241
+51,"Every day, They also",euclid,0.5,1,19,0.50361,0.49861,0.33595
+51,"Every day, They also",euclid,0.7,1,23,0.70603,0.52641,0.47311
+51,"Every day, They also",euclid,0.9,1,30,0.9147,0.61845,0.74289
+51,"Every day, They also",euclid,0.99,1,41,0.99085,0.72806,1.30822
+51,"Every day, They also",causal_fixed,0.3,1,30,0.3236,0.49458,0.328
+51,"Every day, They also",causal_fixed,0.5,1,37,0.5125,0.48591,0.4903
+51,"Every day, They also",causal_fixed,0.7,1,45,0.72075,0.50614,0.70494
+51,"Every day, They also",causal_fixed,0.9,1,57,0.90824,0.5718,1.08989
+51,"Every day, They also",causal_fixed,0.99,1,78,0.99037,0.66426,1.97628
+51,"Every day, They also",dual,0.3,0,,,,
+51,"Every day, They also",dual,0.5,0,,,,
+51,"Every day, They also",dual,0.7,0,,,,
+51,"Every day, They also",dual,0.9,0,,,,
+51,"Every day, They also",dual,0.99,0,,,,
+175,"Honestly, The workers never",euclid,0.3,1,16,0.30343,0.13425,0.38149
+175,"Honestly, The workers never",euclid,0.5,1,20,0.53884,0.12829,0.48211
+175,"Honestly, The workers never",euclid,0.7,1,23,0.70848,0.14081,0.52911
+175,"Honestly, The workers never",euclid,0.9,1,29,0.9113,0.20909,0.59805
+175,"Honestly, The workers never",euclid,0.99,1,39,0.99054,0.41109,0.90683
+175,"Honestly, The workers never",causal_fixed,0.3,1,30,0.30789,0.16813,0.40558
+175,"Honestly, The workers never",causal_fixed,0.5,1,37,0.53073,0.16834,0.5416
+175,"Honestly, The workers never",causal_fixed,0.7,1,43,0.71393,0.19033,0.65703
+175,"Honestly, The workers never",causal_fixed,0.9,1,53,0.90114,0.26736,0.9044
+175,"Honestly, The workers never",causal_fixed,0.99,1,73,0.99083,0.44314,1.87703
+175,"Honestly, The workers never",dual,0.3,0,,,,
+175,"Honestly, The workers never",dual,0.5,0,,,,
+175,"Honestly, The workers never",dual,0.7,0,,,,
+175,"Honestly, The workers never",dual,0.9,0,,,,
+175,"Honestly, The workers never",dual,0.99,0,,,,
+190,"Honestly, Students always",euclid,0.3,1,13,0.31108,0.601,0.17879
+190,"Honestly, Students always",euclid,0.5,1,17,0.55721,0.6055,0.321
+190,"Honestly, Students always",euclid,0.7,1,20,0.73035,0.62891,0.45172
+190,"Honestly, Students always",euclid,0.9,1,25,0.9063,0.68483,0.71675
+190,"Honestly, Students always",euclid,0.99,1,35,0.99178,0.76183,1.40351
+190,"Honestly, Students always",causal_fixed,0.3,1,25,0.31304,0.62305,0.27026
+190,"Honestly, Students always",causal_fixed,0.5,1,31,0.50106,0.61912,0.41618
+190,"Honestly, Students always",causal_fixed,0.7,1,38,0.7149,0.63405,0.62255
+190,"Honestly, Students always",causal_fixed,0.9,1,48,0.90165,0.67277,0.99335
+190,"Honestly, Students always",causal_fixed,0.99,1,67,0.99059,0.70955,1.91914
+190,"Honestly, Students always",dual,0.3,0,,,,
+190,"Honestly, Students always",dual,0.5,0,,,,
+190,"Honestly, Students always",dual,0.7,0,,,,
+190,"Honestly, Students always",dual,0.9,0,,,,
+190,"Honestly, Students always",dual,0.99,0,,,,
+54,"At work, You always",euclid,0.3,1,29,0.31594,0.36696,0.74285
+54,"At work, You always",euclid,0.5,1,33,0.53906,0.35902,0.8629
+54,"At work, You always",euclid,0.7,1,36,0.70029,0.38164,0.90445
+54,"At work, You always",euclid,0.9,1,42,0.90187,0.48233,0.91519
+54,"At work, You always",euclid,0.99,1,53,0.99063,0.68564,1.03926
+54,"At work, You always",causal_fixed,0.3,1,55,0.31697,0.22729,1.41531
+54,"At work, You always",causal_fixed,0.5,1,62,0.52235,0.16125,1.8939
+54,"At work, You always",causal_fixed,0.7,1,69,0.7193,0.12123,2.36549
+54,"At work, You always",causal_fixed,0.9,1,80,0.90593,0.08882,3.04139
+54,"At work, You always",causal_fixed,0.99,1,100,0.99019,0.06314,4.17165
+54,"At work, You always",dual,0.3,0,,,,
+54,"At work, You always",dual,0.5,0,,,,
+54,"At work, You always",dual,0.7,0,,,,
+54,"At work, You always",dual,0.9,0,,,,
+54,"At work, You always",dual,0.99,0,,,,
+245,"At work, You also",euclid,0.3,1,16,0.33511,0.39067,0.18652
+245,"At work, You also",euclid,0.5,1,20,0.54708,0.39601,0.24463
+245,"At work, You also",euclid,0.7,1,24,0.74324,0.44029,0.28808
+245,"At work, You also",euclid,0.9,1,30,0.91474,0.55587,0.37262
+245,"At work, You also",euclid,0.99,1,41,0.99157,0.74727,0.76124
+245,"At work, You also",causal_fixed,0.3,1,28,0.31623,0.49078,0.21094
+245,"At work, You also",causal_fixed,0.5,1,35,0.51932,0.49379,0.34199
+245,"At work, You also",causal_fixed,0.7,1,42,0.71576,0.52416,0.50598
+245,"At work, You also",causal_fixed,0.9,1,53,0.90436,0.60422,0.83324
+245,"At work, You also",causal_fixed,0.99,1,73,0.99025,0.72033,1.6403
+245,"At work, You also",dual,0.3,0,,,,
+245,"At work, You also",dual,0.5,0,,,,
+245,"At work, You also",dual,0.7,0,,,,
+245,"At work, You also",dual,0.9,0,,,,
+245,"At work, You also",dual,0.99,0,,,,
+94,"Honestly, You really",euclid,0.3,1,24,0.31046,0.11873,0.47094
+94,"Honestly, You really",euclid,0.5,1,28,0.5322,0.12198,0.57106
+94,"Honestly, You really",euclid,0.7,1,32,0.7414,0.14635,0.65521
+94,"Honestly, You really",euclid,0.9,1,37,0.90051,0.20841,0.77998
+94,"Honestly, You really",euclid,0.99,1,48,0.99091,0.40464,1.38739
+94,"Honestly, You really",causal_fixed,0.3,1,42,0.30278,0.17039,0.62326
+94,"Honestly, You really",causal_fixed,0.5,1,49,0.51789,0.16337,0.87528
+94,"Honestly, You really",causal_fixed,0.7,1,56,0.72407,0.16637,1.20307
+94,"Honestly, You really",causal_fixed,0.9,1,66,0.9009,0.17032,1.8478
+94,"Honestly, You really",causal_fixed,0.99,1,88,0.99097,0.12877,3.8649
+94,"Honestly, You really",dual,0.3,0,,,,
+94,"Honestly, You really",dual,0.5,0,,,,
+94,"Honestly, You really",dual,0.7,0,,,,
+94,"Honestly, You really",dual,0.9,0,,,,
+94,"Honestly, You really",dual,0.99,0,,,,
+144,"Every day, Students sometimes",euclid,0.3,1,20,0.33798,0.61902,0.2357
+144,"Every day, Students sometimes",euclid,0.5,1,23,0.51258,0.62228,0.34712
+144,"Every day, Students sometimes",euclid,0.7,1,27,0.73329,0.64006,0.54165
+144,"Every day, Students sometimes",euclid,0.9,1,32,0.90096,0.67019,0.85367
+144,"Every day, Students sometimes",euclid,0.99,1,43,0.99194,0.71102,1.70181
+144,"Every day, Students sometimes",causal_fixed,0.3,1,38,0.30678,0.6704,0.44445
+144,"Every day, Students sometimes",causal_fixed,0.5,1,45,0.50892,0.64222,0.69245
+144,"Every day, Students sometimes",causal_fixed,0.7,1,52,0.70756,0.61429,1.01193
+144,"Every day, Students sometimes",causal_fixed,0.9,1,63,0.90137,0.5796,1.62166
+144,"Every day, Students sometimes",causal_fixed,0.99,1,83,0.99035,0.53081,2.92095
+144,"Every day, Students sometimes",dual,0.3,0,,,,
+144,"Every day, Students sometimes",dual,0.5,0,,,,
+144,"Every day, Students sometimes",dual,0.7,0,,,,
+144,"Every day, Students sometimes",dual,0.9,0,,,,
+144,"Every day, Students sometimes",dual,0.99,0,,,,
+25,"At work, We",euclid,0.3,1,41,0.3429,0.03451,1.63015
+25,"At work, We",euclid,0.5,1,45,0.53942,0.0342,1.78838
+25,"At work, We",euclid,0.7,1,49,0.72328,0.03934,1.89699
+25,"At work, We",euclid,0.9,1,56,0.91291,0.06458,2.00289
+25,"At work, We",euclid,0.99,1,68,0.99075,0.17924,2.19398
+25,"At work, We",causal_fixed,0.3,1,73,0.30811,0.03771,2.29682
+25,"At work, We",causal_fixed,0.5,1,81,0.52323,0.03408,2.7023
+25,"At work, We",causal_fixed,0.7,1,88,0.70633,0.0347,3.07648
+25,"At work, We",causal_fixed,0.9,1,100,0.90125,0.04033,3.78811
+25,"At work, We",causal_fixed,0.99,1,122,0.9902,0.0491,5.40901
+25,"At work, We",dual,0.3,0,,,,
+25,"At work, We",dual,0.5,0,,,,
+25,"At work, We",dual,0.7,0,,,,
+25,"At work, We",dual,0.9,0,,,,
+25,"At work, We",dual,0.99,0,,,,
+218,"At work, Many people still",euclid,0.3,1,25,0.33824,0.57144,0.33745
+218,"At work, Many people still",euclid,0.5,1,28,0.50905,0.57363,0.42756
+218,"At work, Many people still",euclid,0.7,1,32,0.72654,0.60181,0.56172
+218,"At work, Many people still",euclid,0.9,1,38,0.9155,0.66874,0.82092
+218,"At work, Many people still",euclid,0.99,1,48,0.99103,0.74665,1.41718
+218,"At work, Many people still",causal_fixed,0.3,1,45,0.32201,0.54346,0.64473
+218,"At work, Many people still",causal_fixed,0.5,1,51,0.50877,0.48553,0.90425
+218,"At work, Many people still",causal_fixed,0.7,1,58,0.71996,0.43417,1.26257
+218,"At work, Many people still",causal_fixed,0.9,1,68,0.90395,0.39113,1.83944
+218,"At work, Many people still",causal_fixed,0.99,1,87,0.99098,0.34846,3.04417
+218,"At work, Many people still",dual,0.3,0,,,,
+218,"At work, Many people still",dual,0.5,0,,,,
+218,"At work, Many people still",dual,0.7,0,,,,
+218,"At work, Many people still",dual,0.9,0,,,,
+218,"At work, Many people still",dual,0.99,0,,,,
+205,"At work, Students sometimes",euclid,0.3,1,22,0.30305,0.58165,0.29268
+205,"At work, Students sometimes",euclid,0.5,1,26,0.53167,0.57917,0.43043
+205,"At work, Students sometimes",euclid,0.7,1,30,0.74714,0.6025,0.5924
+205,"At work, Students sometimes",euclid,0.9,1,35,0.90669,0.64759,0.83971
+205,"At work, Students sometimes",euclid,0.99,1,45,0.99035,0.70928,1.47439
+205,"At work, Students sometimes",causal_fixed,0.3,1,44,0.31464,0.60341,0.57712
+205,"At work, Students sometimes",causal_fixed,0.5,1,51,0.51527,0.55728,0.82666
+205,"At work, Students sometimes",causal_fixed,0.7,1,58,0.71101,0.51715,1.13576
+205,"At work, Students sometimes",causal_fixed,0.9,1,69,0.90216,0.4703,1.71826
+205,"At work, Students sometimes",causal_fixed,0.99,1,89,0.99045,0.40651,2.95076
+205,"At work, Students sometimes",dual,0.3,0,,,,
+205,"At work, Students sometimes",dual,0.5,0,,,,
+205,"At work, Students sometimes",dual,0.7,0,,,,
+205,"At work, Students sometimes",dual,0.9,0,,,,
+205,"At work, Students sometimes",dual,0.99,0,,,,
+40,I usually,euclid,0.3,1,39,0.34971,0.18513,1.52243
+40,I usually,euclid,0.5,1,42,0.53245,0.18043,1.73617
+40,I usually,euclid,0.7,1,45,0.70456,0.19035,1.93553
+40,I usually,euclid,0.9,1,51,0.90989,0.24228,2.3041
+40,I usually,euclid,0.99,1,61,0.99018,0.35709,2.95401
+40,I usually,causal_fixed,0.3,1,73,0.30479,0.16054,2.87206
+40,I usually,causal_fixed,0.5,1,80,0.52279,0.10925,3.61986
+40,I usually,causal_fixed,0.7,1,86,0.70384,0.08509,4.27975
+40,I usually,causal_fixed,0.9,1,97,0.90563,0.06531,5.45334
+40,I usually,causal_fixed,0.99,1,116,0.99015,0.05418,7.34378
+40,I usually,dual,0.3,0,,,,
+40,I usually,dual,0.5,0,,,,
+40,I usually,dual,0.7,0,,,,
+40,I usually,dual,0.9,0,,,,
+40,I usually,dual,0.99,0,,,,
+188,People really,euclid,0.3,1,26,0.35085,0.30984,0.65877
+188,People really,euclid,0.5,1,29,0.52789,0.31131,0.76087
+188,People really,euclid,0.7,1,33,0.74592,0.34794,0.86711
+188,People really,euclid,0.9,1,38,0.90685,0.43427,1.0039
+188,People really,euclid,0.99,1,48,0.99041,0.6072,1.49449
+188,People really,causal_fixed,0.3,1,42,0.30778,0.31639,0.86953
+188,People really,causal_fixed,0.5,1,48,0.50797,0.29348,1.08563
+188,People really,causal_fixed,0.7,1,54,0.7021,0.29126,1.30048
+188,People really,causal_fixed,0.9,1,65,0.91011,0.30887,1.77274
+188,People really,causal_fixed,0.99,1,84,0.99016,0.29292,2.95016
+188,People really,dual,0.3,0,,,,
+188,People really,dual,0.5,0,,,,
+188,People really,dual,0.7,0,,,,
+188,People really,dual,0.9,0,,,,
+188,People really,dual,0.99,0,,,,
+60,"Every day, I rarely",euclid,0.3,1,34,0.32261,0.33404,0.98752
+60,"Every day, I rarely",euclid,0.5,1,38,0.55615,0.3336,1.18117
+60,"Every day, I rarely",euclid,0.7,1,41,0.71858,0.35826,1.3015
+60,"Every day, I rarely",euclid,0.9,1,47,0.91078,0.44818,1.52401
+60,"Every day, I rarely",euclid,0.99,1,58,0.99125,0.60451,2.08568
+60,"Every day, I rarely",causal_fixed,0.3,1,65,0.31216,0.24462,1.78289
+60,"Every day, I rarely",causal_fixed,0.5,1,72,0.52585,0.17425,2.38435
+60,"Every day, I rarely",causal_fixed,0.7,1,78,0.70171,0.13862,2.90821
+60,"Every day, I rarely",causal_fixed,0.9,1,89,0.90019,0.10784,3.8144
+60,"Every day, I rarely",causal_fixed,0.99,1,110,0.99059,0.08926,5.40504
+60,"Every day, I rarely",dual,0.3,0,,,,
+60,"Every day, I rarely",dual,0.5,0,,,,
+60,"Every day, I rarely",dual,0.7,0,,,,
+60,"Every day, I rarely",dual,0.9,0,,,,
+60,"Every day, I rarely",dual,0.99,0,,,,
+22,"At work, They also",euclid,0.3,1,20,0.30386,0.20093,0.48385
+22,"At work, They also",euclid,0.5,1,24,0.50762,0.18979,0.58583
+22,"At work, They also",euclid,0.7,1,28,0.70757,0.20539,0.636
+22,"At work, They also",euclid,0.9,1,35,0.91356,0.2919,0.65587
+22,"At work, They also",euclid,0.99,1,46,0.99018,0.51321,0.81865
+22,"At work, They also",causal_fixed,0.3,1,39,0.32285,0.21367,0.62954
+22,"At work, They also",causal_fixed,0.5,1,46,0.50948,0.20502,0.76978
+22,"At work, They also",causal_fixed,0.7,1,54,0.71468,0.22271,0.89708
+22,"At work, They also",causal_fixed,0.9,1,66,0.90182,0.29641,1.08489
+22,"At work, They also",causal_fixed,0.99,1,89,0.99034,0.48505,1.7655
+22,"At work, They also",dual,0.3,0,,,,
+22,"At work, They also",dual,0.5,0,,,,
+22,"At work, They also",dual,0.7,0,,,,
+22,"At work, They also",dual,0.9,0,,,,
+22,"At work, They also",dual,0.99,0,,,,
+146,"At work, The workers never",euclid,0.3,1,16,0.33057,0.24024,0.32889
+146,"At work, The workers never",euclid,0.5,1,20,0.54948,0.23906,0.42651
+146,"At work, The workers never",euclid,0.7,1,23,0.7042,0.26017,0.48141
+146,"At work, The workers never",euclid,0.9,1,30,0.91616,0.37079,0.61707
+146,"At work, The workers never",euclid,0.99,1,41,0.99067,0.58715,1.10912
+146,"At work, The workers never",causal_fixed,0.3,1,30,0.32501,0.28609,0.34863
+146,"At work, The workers never",causal_fixed,0.5,1,37,0.52533,0.29209,0.47259
+146,"At work, The workers never",causal_fixed,0.7,1,44,0.71417,0.32672,0.60607
+146,"At work, The workers never",causal_fixed,0.9,1,56,0.90572,0.42624,0.944
+146,"At work, The workers never",causal_fixed,0.99,1,79,0.9907,0.55242,2.13912
+146,"At work, The workers never",dual,0.3,0,,,,
+146,"At work, The workers never",dual,0.5,0,,,,
+146,"At work, The workers never",dual,0.7,0,,,,
+146,"At work, The workers never",dual,0.9,0,,,,
+146,"At work, The workers never",dual,0.99,0,,,,
+36,"Honestly, People just",euclid,0.3,1,21,0.33798,0.2849,0.47131
+36,"Honestly, People just",euclid,0.5,1,24,0.52145,0.29028,0.60968
+36,"Honestly, People just",euclid,0.7,1,28,0.74861,0.32893,0.80988
+36,"Honestly, People just",euclid,0.9,1,33,0.91186,0.41049,1.12341
+36,"Honestly, People just",euclid,0.99,1,43,0.9916,0.54766,2.05817
+36,"Honestly, People just",causal_fixed,0.3,1,37,0.32725,0.33158,0.86221
+36,"Honestly, People just",causal_fixed,0.5,1,43,0.52292,0.3103,1.18863
+36,"Honestly, People just",causal_fixed,0.7,1,49,0.70771,0.30194,1.56351
+36,"Honestly, People just",causal_fixed,0.9,1,60,0.90706,0.29606,2.39788
+36,"Honestly, People just",causal_fixed,0.99,1,80,0.99006,0.24512,4.31811
+36,"Honestly, People just",dual,0.3,0,,,,
+36,"Honestly, People just",dual,0.5,0,,,,
+36,"Honestly, People just",dual,0.7,0,,,,
+36,"Honestly, People just",dual,0.9,0,,,,
+36,"Honestly, People just",dual,0.99,0,,,,
+29,"Honestly, They still",euclid,0.3,1,18,0.32112,0.30895,0.44433
+29,"Honestly, They still",euclid,0.5,1,21,0.5097,0.30164,0.57299
+29,"Honestly, They still",euclid,0.7,1,25,0.7468,0.32737,0.73539
+29,"Honestly, They still",euclid,0.9,1,30,0.91449,0.397,0.96749
+29,"Honestly, They still",euclid,0.99,1,39,0.99028,0.51636,1.59439
+29,"Honestly, They still",causal_fixed,0.3,1,33,0.30078,0.33338,0.62976
+29,"Honestly, They still",causal_fixed,0.5,1,40,0.53199,0.30769,0.92151
+29,"Honestly, They still",causal_fixed,0.7,1,46,0.72106,0.30781,1.19826
+29,"Honestly, They still",causal_fixed,0.9,1,56,0.90785,0.33324,1.73623
+29,"Honestly, They still",causal_fixed,0.99,1,75,0.99089,0.3768,3.07337
+29,"Honestly, They still",dual,0.3,0,,,,
+29,"Honestly, They still",dual,0.5,0,,,,
+29,"Honestly, They still",dual,0.7,0,,,,
+29,"Honestly, They still",dual,0.9,0,,,,
+29,"Honestly, They still",dual,0.99,0,,,,
+121,"Every day, They usually",euclid,0.3,1,20,0.33968,0.46475,0.34302
+121,"Every day, They usually",euclid,0.5,1,24,0.55105,0.47809,0.52903
+121,"Every day, They usually",euclid,0.7,1,27,0.70146,0.50408,0.69811
+121,"Every day, They usually",euclid,0.9,1,34,0.91352,0.59,1.18714
+121,"Every day, They usually",euclid,0.99,1,45,0.99075,0.68975,2.16487
+121,"Every day, They usually",causal_fixed,0.3,1,37,0.3128,0.45497,0.69728
+121,"Every day, They usually",causal_fixed,0.5,1,44,0.50127,0.44027,1.00331
+121,"Every day, They usually",causal_fixed,0.7,1,52,0.71201,0.44687,1.40651
+121,"Every day, They usually",causal_fixed,0.9,1,64,0.90424,0.48633,2.10044
+121,"Every day, They usually",causal_fixed,0.99,1,86,0.99073,0.54747,3.62831
+121,"Every day, They usually",dual,0.3,0,,,,
+121,"Every day, They usually",dual,0.5,0,,,,
+121,"Every day, They usually",dual,0.7,0,,,,
+121,"Every day, They usually",dual,0.9,0,,,,
+121,"Every day, They usually",dual,0.99,0,,,,
+63,"At work, We sometimes",euclid,0.3,1,32,0.34822,0.50752,0.57266
+63,"At work, We sometimes",euclid,0.5,1,35,0.52139,0.50639,0.68005
+63,"At work, We sometimes",euclid,0.7,1,39,0.73686,0.53742,0.80957
+63,"At work, We sometimes",euclid,0.9,1,44,0.90009,0.60625,0.97593
+63,"At work, We sometimes",euclid,0.99,1,55,0.99107,0.73088,1.48777
+63,"At work, We sometimes",causal_fixed,0.3,1,58,0.3181,0.37519,1.14309
+63,"At work, We sometimes",causal_fixed,0.5,1,64,0.50328,0.2968,1.56045
+63,"At work, We sometimes",causal_fixed,0.7,1,71,0.71323,0.23553,2.07791
+63,"At work, We sometimes",causal_fixed,0.9,1,82,0.90904,0.18782,2.85833
+63,"At work, We sometimes",causal_fixed,0.99,1,101,0.99031,0.15628,4.11996
+63,"At work, We sometimes",dual,0.3,0,,,,
+63,"At work, We sometimes",dual,0.5,0,,,,
+63,"At work, We sometimes",dual,0.7,0,,,,
+63,"At work, We sometimes",dual,0.9,0,,,,
+63,"At work, We sometimes",dual,0.99,0,,,,
+237,The workers just,euclid,0.3,1,22,0.31716,0.071,0.70943
+237,The workers just,euclid,0.5,1,26,0.55419,0.06629,0.81469
+237,The workers just,euclid,0.7,1,29,0.72139,0.07243,0.84574
+237,The workers just,euclid,0.9,1,35,0.91704,0.11064,0.83253
+237,The workers just,euclid,0.99,1,45,0.99144,0.2608,0.86059
+237,The workers just,causal_fixed,0.3,1,40,0.32633,0.09624,0.88349
+237,The workers just,causal_fixed,0.5,1,46,0.51447,0.09316,1.02271
+237,The workers just,causal_fixed,0.7,1,53,0.72211,0.10497,1.14649
+237,The workers just,causal_fixed,0.9,1,63,0.90101,0.14966,1.31851
+237,The workers just,causal_fixed,0.99,1,83,0.99046,0.28981,2.01601
+237,The workers just,dual,0.3,0,,,,
+237,The workers just,dual,0.5,0,,,,
+237,The workers just,dual,0.7,0,,,,
+237,The workers just,dual,0.9,0,,,,
+237,The workers just,dual,0.99,0,,,,
+162,"Every day, Students really",euclid,0.3,1,18,0.30138,0.59349,0.28593
+162,"Every day, Students really",euclid,0.5,1,22,0.52294,0.5986,0.46347
+162,"Every day, Students really",euclid,0.7,1,26,0.73404,0.62297,0.68681
+162,"Every day, Students really",euclid,0.9,1,32,0.91538,0.67062,1.10086
+162,"Every day, Students really",euclid,0.99,1,42,0.99005,0.71579,1.94456
+162,"Every day, Students really",causal_fixed,0.3,1,34,0.32455,0.58445,0.43448
+162,"Every day, Students really",causal_fixed,0.5,1,40,0.50746,0.56809,0.63566
+162,"Every day, Students really",causal_fixed,0.7,1,47,0.71387,0.56151,0.9299
+162,"Every day, Students really",causal_fixed,0.9,1,58,0.90817,0.56475,1.49809
+162,"Every day, Students really",causal_fixed,0.99,1,77,0.99035,0.54905,2.66056
+162,"Every day, Students really",dual,0.3,0,,,,
+162,"Every day, Students really",dual,0.5,0,,,,
+162,"Every day, Students really",dual,0.7,0,,,,
+162,"Every day, Students really",dual,0.9,0,,,,
+162,"Every day, Students really",dual,0.99,0,,,,
+181,"Honestly, People never",euclid,0.3,1,15,0.34931,0.29005,0.29049
+181,"Honestly, People never",euclid,0.5,1,18,0.53264,0.29125,0.36433
+181,"Honestly, People never",euclid,0.7,1,21,0.70674,0.31797,0.42499
+181,"Honestly, People never",euclid,0.9,1,27,0.91395,0.43184,0.56167
+181,"Honestly, People never",euclid,0.99,1,37,0.99166,0.64028,1.06256
+181,"Honestly, People never",causal_fixed,0.3,1,27,0.30291,0.3151,0.28964
+181,"Honestly, People never",causal_fixed,0.5,1,34,0.52109,0.31552,0.39458
+181,"Honestly, People never",causal_fixed,0.7,1,40,0.70377,0.34624,0.48034
+181,"Honestly, People never",causal_fixed,0.9,1,51,0.90717,0.45585,0.70046
+181,"Honestly, People never",causal_fixed,0.99,1,70,0.99053,0.63097,1.4791
+181,"Honestly, People never",dual,0.3,0,,,,
+181,"Honestly, People never",dual,0.5,0,,,,
+181,"Honestly, People never",dual,0.7,0,,,,
+181,"Honestly, People never",dual,0.9,0,,,,
+181,"Honestly, People never",dual,0.99,0,,,,
+163,"At work, People usually",euclid,0.3,1,14,0.3224,0.70412,0.12955
+163,"At work, People usually",euclid,0.5,1,18,0.56099,0.7134,0.24474
+163,"At work, People usually",euclid,0.7,1,21,0.72811,0.73032,0.36114
+163,"At work, People usually",euclid,0.9,1,26,0.90164,0.76434,0.60515
+163,"At work, People usually",euclid,0.99,1,36,0.99064,0.81001,1.21148
+163,"At work, People usually",causal_fixed,0.3,1,26,0.31593,0.74497,0.21013
+163,"At work, People usually",causal_fixed,0.5,1,32,0.50333,0.74511,0.33742
+163,"At work, People usually",causal_fixed,0.7,1,39,0.71668,0.75021,0.53647
+163,"At work, People usually",causal_fixed,0.9,1,49,0.90312,0.76156,0.91247
+163,"At work, People usually",causal_fixed,0.99,1,68,0.99108,0.76839,1.82275
+163,"At work, People usually",dual,0.3,0,,,,
+163,"At work, People usually",dual,0.5,0,,,,
+163,"At work, People usually",dual,0.7,0,,,,
+163,"At work, People usually",dual,0.9,0,,,,
+163,"At work, People usually",dual,0.99,0,,,,
+145,"At work, They sometimes",euclid,0.3,1,29,0.32218,0.32191,0.82326
+145,"At work, They sometimes",euclid,0.5,1,33,0.53556,0.32003,0.92503
+145,"At work, They sometimes",euclid,0.7,1,37,0.73391,0.35601,0.95542
+145,"At work, They sometimes",euclid,0.9,1,43,0.90839,0.46379,0.96601
+145,"At work, They sometimes",euclid,0.99,1,55,0.99143,0.69122,1.24381
+145,"At work, They sometimes",causal_fixed,0.3,1,56,0.31146,0.256,1.48381
+145,"At work, They sometimes",causal_fixed,0.5,1,64,0.52712,0.19178,1.95174
+145,"At work, They sometimes",causal_fixed,0.7,1,71,0.70764,0.15745,2.369
+145,"At work, They sometimes",causal_fixed,0.9,1,84,0.90818,0.12631,3.14869
+145,"At work, They sometimes",causal_fixed,0.99,1,106,0.99005,0.10689,4.47144
+145,"At work, They sometimes",dual,0.3,0,,,,
+145,"At work, They sometimes",dual,0.5,0,,,,
+145,"At work, They sometimes",dual,0.7,0,,,,
+145,"At work, They sometimes",dual,0.9,0,,,,
+145,"At work, They sometimes",dual,0.99,0,,,,
+42,"Honestly, Students never",euclid,0.3,1,16,0.31005,0.24428,0.34214
+42,"Honestly, Students never",euclid,0.5,1,20,0.54688,0.24281,0.46228
+42,"Honestly, Students never",euclid,0.7,1,23,0.71601,0.2673,0.53868
+42,"Honestly, Students never",euclid,0.9,1,29,0.91564,0.37106,0.70151
+42,"Honestly, Students never",euclid,0.99,1,39,0.99154,0.57646,1.2213
+42,"Honestly, Students never",causal_fixed,0.3,1,31,0.31027,0.26512,0.39646
+42,"Honestly, Students never",causal_fixed,0.5,1,38,0.52201,0.26546,0.5332
+42,"Honestly, Students never",causal_fixed,0.7,1,45,0.72468,0.29823,0.66608
+42,"Honestly, Students never",causal_fixed,0.9,1,55,0.90111,0.38948,0.9008
+42,"Honestly, Students never",causal_fixed,0.99,1,75,0.99031,0.5743,1.76044
+42,"Honestly, Students never",dual,0.3,0,,,,
+42,"Honestly, Students never",dual,0.5,0,,,,
+42,"Honestly, Students never",dual,0.7,0,,,,
+42,"Honestly, Students never",dual,0.9,0,,,,
+42,"Honestly, Students never",dual,0.99,0,,,,
+229,"Every day, They",euclid,0.3,1,34,0.32402,0.08987,1.10585
+229,"Every day, They",euclid,0.5,1,38,0.50819,0.08907,1.26132
+229,"Every day, They",euclid,0.7,1,43,0.72814,0.10462,1.41067
+229,"Every day, They",euclid,0.9,1,50,0.90907,0.16218,1.58226
+229,"Every day, They",euclid,0.99,1,63,0.9909,0.37497,2.08594
+229,"Every day, They",causal_fixed,0.3,1,60,0.30351,0.09753,1.6135
+229,"Every day, They",causal_fixed,0.5,1,68,0.51012,0.09028,1.98569
+229,"Every day, They",causal_fixed,0.7,1,76,0.71223,0.09352,2.39411
+229,"Every day, They",causal_fixed,0.9,1,89,0.90879,0.11269,3.15868
+229,"Every day, They",causal_fixed,0.99,1,111,0.99013,0.14794,4.72739
+229,"Every day, They",dual,0.3,0,,,,
+229,"Every day, They",dual,0.5,0,,,,
+229,"Every day, They",dual,0.7,0,,,,
+229,"Every day, They",dual,0.9,0,,,,
+229,"Every day, They",dual,0.99,0,,,,
+285,"At work, They just",euclid,0.3,1,27,0.31928,0.07055,1.08605
+285,"At work, They just",euclid,0.5,1,31,0.54034,0.06853,1.21406
+285,"At work, They just",euclid,0.7,1,35,0.74307,0.08028,1.26091
+285,"At work, They just",euclid,0.9,1,41,0.91491,0.12746,1.24479
+285,"At work, They just",euclid,0.99,1,52,0.9907,0.32387,1.30023
+285,"At work, They just",causal_fixed,0.3,1,52,0.32158,0.10194,1.42377
+285,"At work, They just",causal_fixed,0.5,1,59,0.51424,0.0981,1.65055
+285,"At work, They just",causal_fixed,0.7,1,67,0.72166,0.10543,1.903
+285,"At work, They just",causal_fixed,0.9,1,79,0.90525,0.1271,2.39126
+285,"At work, They just",causal_fixed,0.99,1,102,0.99068,0.14309,3.86425
+285,"At work, They just",dual,0.3,0,,,,
+285,"At work, They just",dual,0.5,0,,,,
+285,"At work, They just",dual,0.7,0,,,,
+285,"At work, They just",dual,0.9,0,,,,
+285,"At work, They just",dual,0.99,0,,,,
+185,"Honestly, Students still",euclid,0.3,1,15,0.31196,0.42607,0.2269
+185,"Honestly, Students still",euclid,0.5,1,19,0.55516,0.42935,0.36155
+185,"Honestly, Students still",euclid,0.7,1,22,0.72722,0.45596,0.4831
+185,"Honestly, Students still",euclid,0.9,1,27,0.90416,0.52484,0.74642
+185,"Honestly, Students still",euclid,0.99,1,37,0.99155,0.63143,1.50888
+185,"Honestly, Students still",causal_fixed,0.3,1,27,0.30398,0.45465,0.36273
+185,"Honestly, Students still",causal_fixed,0.5,1,33,0.5025,0.4394,0.55652
+185,"Honestly, Students still",causal_fixed,0.7,1,39,0.70068,0.44748,0.7855
+185,"Honestly, Students still",causal_fixed,0.9,1,49,0.90534,0.4982,1.24997
+185,"Honestly, Students still",causal_fixed,0.99,1,66,0.99076,0.59186,2.29198
+185,"Honestly, Students still",dual,0.3,0,,,,
+185,"Honestly, Students still",dual,0.5,0,,,,
+185,"Honestly, Students still",dual,0.7,0,,,,
+185,"Honestly, Students still",dual,0.9,0,,,,
+185,"Honestly, Students still",dual,0.99,0,,,,
+24,Many people sometimes,euclid,0.3,1,26,0.33983,0.47242,0.52401
+24,Many people sometimes,euclid,0.5,1,29,0.52749,0.47703,0.69993
+24,Many people sometimes,euclid,0.7,1,32,0.70708,0.50034,0.90431
+24,Many people sometimes,euclid,0.9,1,38,0.91782,0.57554,1.40209
+24,Many people sometimes,euclid,0.99,1,47,0.99078,0.6629,2.3328
+24,Many people sometimes,causal_fixed,0.3,1,51,0.31455,0.53956,1.08777
+24,Many people sometimes,causal_fixed,0.5,1,58,0.52839,0.47765,1.52254
+24,Many people sometimes,causal_fixed,0.7,1,64,0.70628,0.4329,1.9697
+24,Many people sometimes,causal_fixed,0.9,1,75,0.90711,0.37549,2.91109
+24,Many people sometimes,causal_fixed,0.99,1,94,0.99118,0.3094,4.729
+24,Many people sometimes,dual,0.3,0,,,,
+24,Many people sometimes,dual,0.5,0,,,,
+24,Many people sometimes,dual,0.7,0,,,,
+24,Many people sometimes,dual,0.9,0,,,,
+24,Many people sometimes,dual,0.99,0,,,,
+21,"At work, People rarely",euclid,0.3,1,17,0.31215,0.6393,0.22976
+21,"At work, People rarely",euclid,0.5,1,21,0.5561,0.63797,0.36391
+21,"At work, People rarely",euclid,0.7,1,24,0.7279,0.65662,0.47794
+21,"At work, People rarely",euclid,0.9,1,29,0.90387,0.7053,0.69404
+21,"At work, People rarely",euclid,0.99,1,39,0.99113,0.7765,1.24085
+21,"At work, People rarely",causal_fixed,0.3,1,33,0.32478,0.68223,0.31319
+21,"At work, People rarely",causal_fixed,0.5,1,39,0.51589,0.67412,0.43635
+21,"At work, People rarely",causal_fixed,0.7,1,45,0.70237,0.67666,0.58469
+21,"At work, People rarely",causal_fixed,0.9,1,56,0.91014,0.69401,0.95579
+21,"At work, People rarely",causal_fixed,0.99,1,74,0.99091,0.70673,1.7877
+21,"At work, People rarely",dual,0.3,0,,,,
+21,"At work, People rarely",dual,0.5,0,,,,
+21,"At work, People rarely",dual,0.7,0,,,,
+21,"At work, People rarely",dual,0.9,0,,,,
+21,"At work, People rarely",dual,0.99,0,,,,
+298,"Every day, Many people still",euclid,0.3,1,17,0.32006,0.5836,0.19634
+298,"Every day, Many people still",euclid,0.5,1,21,0.55649,0.60029,0.34786
+298,"Every day, Many people still",euclid,0.7,1,24,0.72339,0.6248,0.50456
+298,"Every day, Many people still",euclid,0.9,1,30,0.91887,0.67954,0.92537
+298,"Every day, Many people still",euclid,0.99,1,39,0.9902,0.72951,1.7213
+298,"Every day, Many people still",causal_fixed,0.3,1,31,0.32899,0.63163,0.35627
+298,"Every day, Many people still",causal_fixed,0.5,1,37,0.52801,0.63509,0.56688
+298,"Every day, Many people still",causal_fixed,0.7,1,43,0.71938,0.64986,0.84932
+298,"Every day, Many people still",causal_fixed,0.9,1,53,0.91164,0.69,1.45664
+298,"Every day, Many people still",causal_fixed,0.99,1,70,0.99123,0.75418,2.72654
+298,"Every day, Many people still",dual,0.3,0,,,,
+298,"Every day, Many people still",dual,0.5,0,,,,
+298,"Every day, Many people still",dual,0.7,0,,,,
+298,"Every day, Many people still",dual,0.9,0,,,,
+298,"Every day, Many people still",dual,0.99,0,,,,
+258,You usually,euclid,0.3,1,39,0.32634,0.11632,1.47869
+258,You usually,euclid,0.5,1,43,0.5578,0.12293,1.62519
+258,You usually,euclid,0.7,1,46,0.71928,0.14373,1.68492
+258,You usually,euclid,0.9,1,52,0.91146,0.23,1.74274
+258,You usually,euclid,0.99,1,63,0.99166,0.46577,2.08237
+258,You usually,causal_fixed,0.3,1,74,0.32425,0.11711,2.61132
+258,You usually,causal_fixed,0.5,1,80,0.50207,0.07986,3.27208
+258,You usually,causal_fixed,0.7,1,87,0.70431,0.0558,4.04153
+258,You usually,causal_fixed,0.9,1,98,0.90088,0.03939,5.17756
+258,You usually,causal_fixed,0.99,1,118,0.99023,0.02996,7.1008
+258,You usually,dual,0.3,0,,,,
+258,You usually,dual,0.5,0,,,,
+258,You usually,dual,0.7,0,,,,
+258,You usually,dual,0.9,0,,,,
+258,You usually,dual,0.99,0,,,,
+184,"Every day, You never",euclid,0.3,1,33,0.34124,0.35713,0.75783
+184,"Every day, You never",euclid,0.5,1,37,0.55443,0.35065,0.86664
+184,"Every day, You never",euclid,0.7,1,40,0.70559,0.37109,0.90781
+184,"Every day, You never",euclid,0.9,1,47,0.91623,0.47969,0.91901
+184,"Every day, You never",euclid,0.99,1,58,0.99112,0.66278,1.02498
+184,"Every day, You never",causal_fixed,0.3,1,59,0.30287,0.30215,1.01517
+184,"Every day, You never",causal_fixed,0.5,1,66,0.50076,0.22509,1.39531
+184,"Every day, You never",causal_fixed,0.7,1,74,0.72179,0.16904,1.83232
+184,"Every day, You never",causal_fixed,0.9,1,85,0.90377,0.1277,2.37134
+184,"Every day, You never",causal_fixed,0.99,1,107,0.99076,0.08751,3.34023
+184,"Every day, You never",dual,0.3,0,,,,
+184,"Every day, You never",dual,0.5,0,,,,
+184,"Every day, You never",dual,0.7,0,,,,
+184,"Every day, You never",dual,0.9,0,,,,
+184,"Every day, You never",dual,0.99,0,,,,
+257,"Every day, We always",euclid,0.3,1,23,0.30057,0.62678,0.33257
+257,"Every day, We always",euclid,0.5,1,27,0.51897,0.62414,0.48812
+257,"Every day, We always",euclid,0.7,1,31,0.72882,0.64118,0.66803
+257,"Every day, We always",euclid,0.9,1,37,0.91225,0.67847,0.97737
+257,"Every day, We always",euclid,0.99,1,48,0.99154,0.70909,1.65973
+257,"Every day, We always",causal_fixed,0.3,1,46,0.30079,0.55932,0.59693
+257,"Every day, We always",causal_fixed,0.5,1,54,0.51732,0.51725,0.84013
+257,"Every day, We always",causal_fixed,0.7,1,61,0.70345,0.49012,1.09936
+257,"Every day, We always",causal_fixed,0.9,1,73,0.90193,0.45855,1.6334
+257,"Every day, We always",causal_fixed,0.99,1,95,0.99089,0.40995,2.78777
+257,"Every day, We always",dual,0.3,0,,,,
+257,"Every day, We always",dual,0.5,0,,,,
+257,"Every day, We always",dual,0.7,0,,,,
+257,"Every day, We always",dual,0.9,0,,,,
+257,"Every day, We always",dual,0.99,0,,,,
+114,"Every day, The workers just",euclid,0.3,1,22,0.33206,0.30569,0.48347
+114,"Every day, The workers just",euclid,0.5,1,26,0.54972,0.30083,0.56252
+114,"Every day, The workers just",euclid,0.7,1,29,0.70505,0.32254,0.5868
+114,"Every day, The workers just",euclid,0.9,1,35,0.90103,0.4206,0.60074
+114,"Every day, The workers just",euclid,0.99,1,46,0.99031,0.65155,0.79309
+114,"Every day, The workers just",causal_fixed,0.3,1,40,0.30895,0.35235,0.62681
+114,"Every day, The workers just",causal_fixed,0.5,1,47,0.50079,0.3385,0.77149
+114,"Every day, The workers just",causal_fixed,0.7,1,55,0.71409,0.35166,0.92421
+114,"Every day, The workers just",causal_fixed,0.9,1,67,0.9061,0.39871,1.20742
+114,"Every day, The workers just",causal_fixed,0.99,1,88,0.99017,0.43633,2.01564
+114,"Every day, The workers just",dual,0.3,0,,,,
+114,"Every day, The workers just",dual,0.5,0,,,,
+114,"Every day, The workers just",dual,0.7,0,,,,
+114,"Every day, The workers just",dual,0.9,0,,,,
+114,"Every day, The workers just",dual,0.99,0,,,,
+248,"Every day, The workers also",euclid,0.3,1,22,0.33022,0.41931,0.409
+248,"Every day, The workers also",euclid,0.5,1,26,0.52846,0.41531,0.53661
+248,"Every day, The workers also",euclid,0.7,1,30,0.71679,0.4402,0.65628
+248,"Every day, The workers also",euclid,0.9,1,37,0.91187,0.5271,0.88915
+248,"Every day, The workers also",euclid,0.99,1,49,0.99092,0.65753,1.49518
+248,"Every day, The workers also",causal_fixed,0.3,1,41,0.31919,0.42732,0.4959
+248,"Every day, The workers also",causal_fixed,0.5,1,48,0.5032,0.41662,0.65602
+248,"Every day, The workers also",causal_fixed,0.7,1,56,0.70933,0.43069,0.86389
+248,"Every day, The workers also",causal_fixed,0.9,1,68,0.90117,0.48337,1.25583
+248,"Every day, The workers also",causal_fixed,0.99,1,90,0.9903,0.56156,2.2484
+248,"Every day, The workers also",dual,0.3,0,,,,
+248,"Every day, The workers also",dual,0.5,0,,,,
+248,"Every day, The workers also",dual,0.7,0,,,,
+248,"Every day, The workers also",dual,0.9,0,,,,
+248,"Every day, The workers also",dual,0.99,0,,,,
+4,"At work, You",euclid,0.3,1,39,0.33629,0.02054,0.9138
+4,"At work, You",euclid,0.5,1,43,0.51946,0.02033,1.02754
+4,"At work, You",euclid,0.7,1,48,0.73504,0.02412,1.14887
+4,"At work, You",euclid,0.9,1,55,0.91118,0.03904,1.29533
+4,"At work, You",euclid,0.99,1,68,0.99104,0.11296,1.63941
+4,"At work, You",causal_fixed,0.3,1,67,0.31292,0.03016,1.66233
+4,"At work, You",causal_fixed,0.5,1,74,0.50055,0.02743,2.01335
+4,"At work, You",causal_fixed,0.7,1,82,0.71185,0.02798,2.46246
+4,"At work, You",causal_fixed,0.9,1,94,0.90499,0.03372,3.24182
+4,"At work, You",causal_fixed,0.99,1,116,0.99091,0.04667,4.99387
+4,"At work, You",dual,0.3,0,,,,
+4,"At work, You",dual,0.5,0,,,,
+4,"At work, You",dual,0.7,0,,,,
+4,"At work, You",dual,0.9,0,,,,
+4,"At work, You",dual,0.99,0,,,,
+230,"Every day, Many people never",euclid,0.3,1,22,0.30834,0.28078,0.56834
+230,"Every day, Many people never",euclid,0.5,1,26,0.53511,0.28129,0.72494
+230,"Every day, Many people never",euclid,0.7,1,30,0.74677,0.3203,0.8581
+230,"Every day, Many people never",euclid,0.9,1,35,0.90413,0.41199,1.02575
+230,"Every day, Many people never",euclid,0.99,1,46,0.99127,0.6263,1.62885
+230,"Every day, Many people never",causal_fixed,0.3,1,42,0.32244,0.28838,0.64593
+230,"Every day, Many people never",causal_fixed,0.5,1,48,0.50611,0.28404,0.80854
+230,"Every day, Many people never",causal_fixed,0.7,1,55,0.7143,0.30633,1.00555
+230,"Every day, Many people never",causal_fixed,0.9,1,66,0.90932,0.37849,1.3799
+230,"Every day, Many people never",causal_fixed,0.99,1,85,0.9904,0.47369,2.34471
+230,"Every day, Many people never",dual,0.3,0,,,,
+230,"Every day, Many people never",dual,0.5,0,,,,
+230,"Every day, Many people never",dual,0.7,0,,,,
+230,"Every day, Many people never",dual,0.9,0,,,,
+230,"Every day, Many people never",dual,0.99,0,,,,
+102,"Every day, We still",euclid,0.3,1,27,0.3017,0.50575,0.46827
+102,"Every day, We still",euclid,0.5,1,31,0.52821,0.50418,0.62384
+102,"Every day, We still",euclid,0.7,1,35,0.74251,0.53699,0.7793
+102,"Every day, We still",euclid,0.9,1,40,0.90301,0.60226,0.99045
+102,"Every day, We still",euclid,0.99,1,51,0.99146,0.70558,1.60652
+102,"Every day, We still",causal_fixed,0.3,1,51,0.30222,0.47611,0.89492
+102,"Every day, We still",causal_fixed,0.5,1,58,0.51053,0.41675,1.25208
+102,"Every day, We still",causal_fixed,0.7,1,65,0.71414,0.37735,1.65607
+102,"Every day, We still",causal_fixed,0.9,1,76,0.90686,0.34865,2.33113
+102,"Every day, We still",causal_fixed,0.99,1,96,0.99105,0.33415,3.63668
+102,"Every day, We still",dual,0.3,0,,,,
+102,"Every day, We still",dual,0.5,0,,,,
+102,"Every day, We still",dual,0.7,0,,,,
+102,"Every day, We still",dual,0.9,0,,,,
+102,"Every day, We still",dual,0.99,0,,,,
+87,"Honestly, Many people really",euclid,0.3,1,11,0.30034,0.51978,0.10529
+87,"Honestly, Many people really",euclid,0.5,1,15,0.52234,0.532,0.21719
+87,"Honestly, Many people really",euclid,0.7,1,19,0.73545,0.56507,0.38781
+87,"Honestly, Many people really",euclid,0.9,1,25,0.9182,0.62398,0.76536
+87,"Honestly, Many people really",euclid,0.99,1,35,0.99127,0.679,1.60728
+87,"Honestly, Many people really",causal_fixed,0.3,1,19,0.30944,0.56715,0.14902
+87,"Honestly, Many people really",causal_fixed,0.5,1,25,0.50474,0.57911,0.28311
+87,"Honestly, Many people really",causal_fixed,0.7,1,32,0.72569,0.60579,0.51256
+87,"Honestly, Many people really",causal_fixed,0.9,1,42,0.91098,0.6497,0.97188
+87,"Honestly, Many people really",causal_fixed,0.99,1,60,0.9912,0.69147,2.02095
+87,"Honestly, Many people really",dual,0.3,0,,,,
+87,"Honestly, Many people really",dual,0.5,0,,,,
+87,"Honestly, Many people really",dual,0.7,0,,,,
+87,"Honestly, Many people really",dual,0.9,0,,,,
+87,"Honestly, Many people really",dual,0.99,0,,,,

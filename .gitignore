@@ -1,0 +1,7 @@
+# extracted embedding matrices are too large for git (regenerate with extract_embeddings.py)
+data/
+# local agent/tool state
+.mimosa/
+.zcode/
+__pycache__/
+*.pyc

@@ -1,0 +1,11 @@
+{
+ "logits_rel_err": 6.392812679223425e-07,
+ "probe_heldout_auc": 0.9314298561151079,
+ "n_base_raw": 300,
+ "n_base_kept": 278,
+ "n_target_raw": 300,
+ "n_target_kept": 256,
+ "n_steered": 80,
+ "cos_euclid_causal": 0.9431337118148804,
+ "alpha": 0.00015165469026083434
+}
