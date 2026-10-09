@@ -30,3 +30,33 @@ changes made per the task document itself:
   hand-written part explicitly allowed by the task document section 4.
   Re-running aggregate.py regenerates sections 1-7 and removes 8-9; the
   conclusions live in git history (and must be re-appended if regenerated).
+
+## V4
+
+1. `steer_compare_v4.py` modification (regression fix, with diff):
+   v4's summary.csv writer drew 8 bootstrap samples per cell from the shared
+   rng (rr0) instead of v3's 4, so every shared-column interval after the
+   first cell diverged from V3 (probe: 48.9% of cells > 1e-6, max 0.060 on
+   kl_hi). Fix: the four NEW columns (cf_dev, kl_bin, kl_pair, kl_neu) now
+   draw from a dedicated rng `rr_new = default_rng(20260909)` via `bci_new`,
+   leaving rr0's stream exactly as in v3. After the fix the WP-A1 regression
+   probe (gemma1b s0 / alpha 5e-3) is bit-identical to V3 across all 720
+   shared cells (max diff 0.0). Diff:
+   ```diff
+    def col(m, L, key): ...
+    rr = np.random.default_rng(1); model = D["meta"].get("model", "?")
+   +rr_new = np.random.default_rng(20260909)
+   +bci_new = (lambda x: cluster_boot_ci(x, grp, rr_new, a.boot)) if use_cluster else (lambda x: boot_ci(x, rr_new, a.boot))
+   ...
+   - *np.round(bci(col(m, L, "cf_dev")), 5), *np.round(bci(col(m, L, "kl_bin")), 5),
+   - *np.round(bci(col(m, L, "kl_pair")), 5), *np.round(bci(col(m, L, "kl_neu")), 5),
+   + *np.round(bci_new(col(m, L, "cf_dev")), 5), *np.round(bci_new(col(m, L, "kl_bin")), 5),
+   + *np.round(bci_new(col(m, L, "kl_pair")), 5), *np.round(bci_new(col(m, L, "kl_neu")), 5),
+   ```
+2. `extract_embeddings.py` extensions (task doc section 3.3, implemented by
+   the executor as instructed): `--concept ing` (gerund rules with ie->ying,
+   ee-retention, e-drop, single-syllable CVC doubling whitelist; unit-tested
+   against 23 verbs), `--ctx_source c4` streaming extraction with Park
+   filtering (top-3 in-group + cumulative mass), per-doc caps, doc-id
+   clusters written to contexts.json (base_cluster), ~20-token decoded
+   context texts, and meta.json concept/ctx_source fields.

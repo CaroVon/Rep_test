@@ -71,3 +71,49 @@ STAGE "BATCH COMPLETE"
 # WP6 final
 python aggregate.py            # regenerated AGGREGATE_V3.md over 27 runs
 # hand-written sections 8 (Conclusions) and 9 (Limitations) appended per task doc section 4
+#!/usr/bin/env bash
+# V4 batch stage 1: WP-A1 regression reruns + WP-C optgap runs
+set -uo pipefail
+PY=/home/administrator/dev/ML/lrg_env/bin/python
+STAGE() { echo "=== [$(date +%H:%M:%S)] $1 ==="; }
+
+# the regression probe run already used exactly these params - reuse it
+[ -d runs/gemma1b_v4/s0_abs5e-3 ] || mv runs/gemma1b_v4/regress_s0_abs5e-3 runs/gemma1b_v4/s0_abs5e-3
+
+STAGE "WP-A1: gemma-1b 3 seeds x 3 alphas (v4, identical params to V3)"
+for S in 0 1 2; do
+  for A in 5e-3 2e-2 1e-1; do
+    [ -f runs/gemma1b_v4/s${S}_abs${A}/summary.csv ] || $PY steer_compare_v4.py --data_dir data/gemma1b_s$S --backend torch --topk 20000 --methods grid --alpha_abs $A --n_ctx 60 --seed $S --filter mass --min_mass 0.15 --out runs/gemma1b_v4/s${S}_abs${A}
+  done
+done
+
+STAGE "WP-A1: gpt2 3 seeds x 3 alphas"
+for S in 0 1 2; do
+  for A in 5e-3 2e-2 1e-1; do
+    [ -f runs/gpt2_v4/s${S}_abs${A}/summary.csv ] || $PY steer_compare_v4.py --data_dir data/gpt2_s$S --backend torch --topk 5000 --methods grid --alpha_abs $A --n_ctx 60 --seed $S --filter mass --min_mass 0.15 --out runs/gpt2_v4/s${S}_abs${A}
+  done
+done
+
+STAGE "WP-A1: gemma-4b seed 0, alpha 5e-3"
+[ -f runs/gemma4b_v4/s0_abs5e-3/summary.csv ] || $PY steer_compare_v4.py --data_dir data/gemma4b_s0 --backend torch --topk 20000 --methods grid --alpha_abs 5e-3 --n_ctx 60 --seed 0 --filter mass --min_mass 0.15 --out runs/gemma4b_v4/s0_abs5e-3
+
+STAGE "WP-C: optgap runs"
+for A in 5e-3 1e-1; do
+  [ -f runs/gemma1b_v4/optgap_s0_abs${A}/summary.csv ] || $PY steer_compare_v4.py --data_dir data/gemma1b_s0 --backend torch --topk 20000 --methods grid --alpha_abs $A --n_ctx 60 --optgap 20 --seed 0 --out runs/gemma1b_v4/optgap_s0_abs${A}
+done
+for S in 1 2; do
+  [ -f runs/gemma1b_v4/optgap_s${S}_abs5e-3/summary.csv ] || $PY steer_compare_v4.py --data_dir data/gemma1b_s$S --backend torch --topk 20000 --methods grid --alpha_abs 5e-3 --n_ctx 60 --optgap 20 --seed $S --out runs/gemma1b_v4/optgap_s${S}_abs5e-3
+done
+[ -f runs/gpt2_v4/optgap_s0_abs5e-3/summary.csv ] || $PY steer_compare_v4.py --data_dir data/gpt2_s0 --backend torch --topk 5000 --methods grid --alpha_abs 5e-3 --n_ctx 60 --optgap 20 --seed 0 --out runs/gpt2_v4/optgap_s0_abs5e-3
+
+STAGE "STAGE 1 COMPLETE"
+# V4 WP-A0
+python steer_compare_v4.py --selftest
+python steer_compare_v4.py --synthetic --backend numpy --n_ctx 10 --max_steps 100 --topk 1500 --optgap 3 --out runs/syn_v4_np
+python steer_compare_v4.py --synthetic --backend torch --n_ctx 10 --max_steps 100 --topk 1500 --optgap 3 --out runs/syn_v4_torch
+# V4 regression fix probe (pre-fix FAIL 48.9% cells; post-fix 0.0) - see DEVIATIONS.md V4.1
+python steer_compare_v4.py --data_dir data/gemma1b_s0 --backend torch --topk 20000 --methods grid --alpha_abs 5e-3 --n_ctx 60 --seed 0 --filter mass --min_mass 0.15 --out runs/gemma1b_v4/s0_abs5e-3
+# C4 smoke/probe
+python extract_embeddings.py --model google/gemma-3-1b-pt --dtype bfloat16 --seed 99 --ctx_source c4 --c4_docs 300 --out_dir data/c4_smoke
+# V4 WP-A1 batch (run_v4a.sh): gemma1b 3x3, gpt2 3x3, gemma4b s0@5e-3 - all 19 bit-identical to V3 (max diff 0.0)
+# V4 WP-C optgap runs (in run_v4a.sh, running)

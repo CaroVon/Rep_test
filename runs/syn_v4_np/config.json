@@ -1,0 +1,39 @@
+{
+ "args": {
+  "data_dir": null,
+  "out": "runs/syn_v4_np",
+  "synthetic": true,
+  "selftest": false,
+  "backend": "numpy",
+  "device": "cuda",
+  "n_ctx": 10,
+  "min_mass": 0.15,
+  "alpha_rel": 0.01,
+  "alpha_abs": null,
+  "ridge_rel": 1e-06,
+  "methods": "grid",
+  "no_cluster_boot": false,
+  "filter": "mass",
+  "park_mass": 0.7,
+  "park_k": 3,
+  "optgap": 3,
+  "primary_level": 0.9,
+  "topk": 1500,
+  "step_frac": 0.01,
+  "max_steps": 100,
+  "levels": "0.3,0.5,0.7,0.9,0.99",
+  "seed": 0,
+  "boot": 2000
+ },
+ "backend": "numpy",
+ "V": 3000,
+ "d": 64,
+ "n_pairs": 120,
+ "meta": {
+  "model": "synthetic",
+  "logits_rel_err": 0.0
+ },
+ "python": "3.12.3",
+ "numpy": "2.5.3",
+ "runtime_s": 37.7
+}
