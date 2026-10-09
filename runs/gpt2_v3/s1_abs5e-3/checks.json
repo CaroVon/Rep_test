@@ -1,0 +1,26 @@
+{
+ "logits_rel_err": 6.112086907705816e-07,
+ "probe_heldout_auc": 0.8870446949526992,
+ "n_base_raw": 300,
+ "n_base_kept": 277,
+ "n_target_raw": 300,
+ "n_target_kept": 254,
+ "n_steered": 60,
+ "cos_euclid_causal": 0.9738115072250366,
+ "alpha": 0.005,
+ "probe_cos": {
+  "ctx-unemb": 0.18944208966591414,
+  "ctx-dmd": 0.19761917635230095,
+  "unemb-dmd": 0.9593183387856907
+ },
+ "alpha_over_mean_eig_S0": 0.3296963642469868,
+ "sigma_t_diag": {
+  "trace_mean": 6.360446600911573,
+  "eig_max_mean": 0.6305399173237378,
+  "eig_p1_mean": 0.12972203642649363,
+  "eig_p10_mean": 0.014889181647628322,
+  "eig_p50_mean": 0.0013007511151992492,
+  "frac_eig_above_alpha": 0.22526041666666669
+ },
+ "ci_type": "cluster"
+}

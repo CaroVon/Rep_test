@@ -33,6 +33,27 @@ entropy diagnostics). Summary of the corrected picture:
   steering; the improvement over the raw unembedding direction is
   significant under cluster bootstrap (+0.082 [+0.047, +0.115]).
 
+## V3: probe x metric factorial (NEXT_EXPERIMENT_AND_REVIEW.md)
+
+Separates the PROBE (ctx / unemb / dmd) from the METRIC (euc / cau / dua)
+in a 3x3 grid with pre-specified questions Q1-Q4, cluster bootstrap,
+kl99/rd/cf robustness metrics, and an author-implementation check. Key
+outcomes (see `runs/AGGREGATE_V3.md`):
+
+- Implementation equivalence vs KihoPark/dual-steering confirmed to
+  cosine 1.000000 / trajectory 5e-6 (`repro_check.md`).
+- Q2 ESTABLISHED: Park 2024's Cov^-1 pre-multiplication improves the raw
+  unembedding-difference direction on all models, seeds and robustness
+  settings (e.g. gpt2 +0.74 [+0.65,+0.85] KL at level 0.9).
+- Q1/Q4 (adaptive metric on the Dual MD probe): better than Euclidean and
+  fixed in 19/19 and 16/19 point estimates (CI excludes 0 in 15/19 and
+  14/19), flipping under a tighter context filter - consistent direction,
+  not established.
+- Q3: on the unembedding-difference probe the precomputed fixed metric
+  retains or beats the adaptive one at Park's alpha; practically
+  equivalent at alpha >= 2e-2 on gemma-1b.
+- Tags: v3-g0, v3-g1, v3-g2 mark the three review gates.
+
 ## Repository layout
 
 ```

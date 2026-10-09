@@ -133,5 +133,320 @@
    "logits_rel_err": 6.392812679223425e-07,
    "seed": 0
   }
+ },
+ "gemma1b_s0": {
+  "G.npy": {
+   "sha256": "037fa3f5da7885b1a9d9166dc1b885c56c974f5e1fde5cca9b52b87890447538",
+   "shape": [
+    262144,
+    1152
+   ],
+   "dtype": "float16"
+  },
+  "E_base.npy": {
+   "sha256": "68ffb55c1fc802678a12ce696f938ddc95705b5b1bb38e07fd314ddc8c6cc6cd",
+   "shape": [
+    300,
+    1152
+   ],
+   "dtype": "float32"
+  },
+  "E_target.npy": {
+   "sha256": "01f261320385c5aa9bbe145f91c26a7d82f64d739ee086b4a08486778a7f9149",
+   "shape": [
+    300,
+    1152
+   ],
+   "dtype": "float32"
+  },
+  "pairs.npy": {
+   "sha256": "8457bf67a970de9ee104007d9d945f9f96e87efdc0ac029ea6c5f2163662212d",
+   "shape": [
+    144,
+    2
+   ],
+   "dtype": "int64"
+  },
+  "contexts.json": {
+   "sha256": "de2869b42a00298dbfc56858f7df1980e1ca0b8ffd58f8ba4d41e6e5fc32a662"
+  },
+  "meta": {
+   "model": "google/gemma-3-1b-pt",
+   "dtype": "bfloat16",
+   "load_in_4bit": false,
+   "n_pairs": 144,
+   "logits_rel_err": 0.0028589738067239523,
+   "seed": 0
+  }
+ },
+ "gemma1b_s1": {
+  "G.npy": {
+   "sha256": "037fa3f5da7885b1a9d9166dc1b885c56c974f5e1fde5cca9b52b87890447538",
+   "shape": [
+    262144,
+    1152
+   ],
+   "dtype": "float16"
+  },
+  "E_base.npy": {
+   "sha256": "d84352a93dc2e95ef4f1bab562e25ec91c2997a649d2952e4ee3a507729d3bf3",
+   "shape": [
+    300,
+    1152
+   ],
+   "dtype": "float32"
+  },
+  "E_target.npy": {
+   "sha256": "887c38dc1358a87737243043b3b4ae2953695099c0d7cfcc8ef10067241d6bf8",
+   "shape": [
+    300,
+    1152
+   ],
+   "dtype": "float32"
+  },
+  "pairs.npy": {
+   "sha256": "8457bf67a970de9ee104007d9d945f9f96e87efdc0ac029ea6c5f2163662212d",
+   "shape": [
+    144,
+    2
+   ],
+   "dtype": "int64"
+  },
+  "contexts.json": {
+   "sha256": "558675a4115fb1ebd070d94c1fd0975783be947912c55a69c5af40a238b3e3b0"
+  },
+  "meta": {
+   "model": "google/gemma-3-1b-pt",
+   "dtype": "bfloat16",
+   "load_in_4bit": false,
+   "n_pairs": 144,
+   "logits_rel_err": 0.0027168109081685543,
+   "seed": 1
+  }
+ },
+ "gemma1b_s2": {
+  "G.npy": {
+   "sha256": "037fa3f5da7885b1a9d9166dc1b885c56c974f5e1fde5cca9b52b87890447538",
+   "shape": [
+    262144,
+    1152
+   ],
+   "dtype": "float16"
+  },
+  "E_base.npy": {
+   "sha256": "d0a43553dae4cc0eeb529d8edaa2439cd1d7e7b130312eba01e8c17e3523102d",
+   "shape": [
+    300,
+    1152
+   ],
+   "dtype": "float32"
+  },
+  "E_target.npy": {
+   "sha256": "14e9135550948cb47c0e7fd9ee136e095386227627e171ffb774ddabd21e9629",
+   "shape": [
+    300,
+    1152
+   ],
+   "dtype": "float32"
+  },
+  "pairs.npy": {
+   "sha256": "8457bf67a970de9ee104007d9d945f9f96e87efdc0ac029ea6c5f2163662212d",
+   "shape": [
+    144,
+    2
+   ],
+   "dtype": "int64"
+  },
+  "contexts.json": {
+   "sha256": "3290df10ae6c592f674074f6a0360b0741377b020027a2987b69865ef16b8bae"
+  },
+  "meta": {
+   "model": "google/gemma-3-1b-pt",
+   "dtype": "bfloat16",
+   "load_in_4bit": false,
+   "n_pairs": 144,
+   "logits_rel_err": 0.0026462292298674583,
+   "seed": 2
+  }
+ },
+ "gpt2_s0": {
+  "G.npy": {
+   "sha256": "fa7e7f5f2ea351092c6949e302687fe22e707076f38ea7e8de98632cceb73d68",
+   "shape": [
+    50257,
+    768
+   ],
+   "dtype": "float32"
+  },
+  "E_base.npy": {
+   "sha256": "3b64551e5e107ac190de93427c5f470329560e744bf5852c93cbab4678e4ba70",
+   "shape": [
+    300,
+    768
+   ],
+   "dtype": "float32"
+  },
+  "E_target.npy": {
+   "sha256": "f358648e9a501d3101cc174ff1f65e3e36eae3ab76091fed0678d45605f09bd7",
+   "shape": [
+    300,
+    768
+   ],
+   "dtype": "float32"
+  },
+  "pairs.npy": {
+   "sha256": "678cdca6ab63cb9ca34432feafe47dc9558dd206af5dfc180cad2cc37c109d90",
+   "shape": [
+    143,
+    2
+   ],
+   "dtype": "int64"
+  },
+  "contexts.json": {
+   "sha256": "de2869b42a00298dbfc56858f7df1980e1ca0b8ffd58f8ba4d41e6e5fc32a662"
+  },
+  "meta": {
+   "model": "gpt2",
+   "dtype": "float32",
+   "load_in_4bit": false,
+   "n_pairs": 143,
+   "logits_rel_err": 5.227312271927076e-07,
+   "seed": 0
+  }
+ },
+ "gpt2_s1": {
+  "G.npy": {
+   "sha256": "fa7e7f5f2ea351092c6949e302687fe22e707076f38ea7e8de98632cceb73d68",
+   "shape": [
+    50257,
+    768
+   ],
+   "dtype": "float32"
+  },
+  "E_base.npy": {
+   "sha256": "eba173edc9b1989c6afef3a3225d9b686c2996035f2fde3397b6a1cfc76211a4",
+   "shape": [
+    300,
+    768
+   ],
+   "dtype": "float32"
+  },
+  "E_target.npy": {
+   "sha256": "248940fec3cb8424eea6c1dc10732c5a3fd16f22654979b851fbd9a6650df1ca",
+   "shape": [
+    300,
+    768
+   ],
+   "dtype": "float32"
+  },
+  "pairs.npy": {
+   "sha256": "678cdca6ab63cb9ca34432feafe47dc9558dd206af5dfc180cad2cc37c109d90",
+   "shape": [
+    143,
+    2
+   ],
+   "dtype": "int64"
+  },
+  "contexts.json": {
+   "sha256": "558675a4115fb1ebd070d94c1fd0975783be947912c55a69c5af40a238b3e3b0"
+  },
+  "meta": {
+   "model": "gpt2",
+   "dtype": "float32",
+   "load_in_4bit": false,
+   "n_pairs": 143,
+   "logits_rel_err": 6.112086907705816e-07,
+   "seed": 1
+  }
+ },
+ "gpt2_s2": {
+  "G.npy": {
+   "sha256": "fa7e7f5f2ea351092c6949e302687fe22e707076f38ea7e8de98632cceb73d68",
+   "shape": [
+    50257,
+    768
+   ],
+   "dtype": "float32"
+  },
+  "E_base.npy": {
+   "sha256": "26078c896c7d74221dbf93f5049cc7f4d27da8e9e0ea0cc3a2a0d48b4688abd1",
+   "shape": [
+    300,
+    768
+   ],
+   "dtype": "float32"
+  },
+  "E_target.npy": {
+   "sha256": "451becdfc34256ad7e117bbcc91d4d4ec82ba9c26fc27ebe661494034412ffe2",
+   "shape": [
+    300,
+    768
+   ],
+   "dtype": "float32"
+  },
+  "pairs.npy": {
+   "sha256": "678cdca6ab63cb9ca34432feafe47dc9558dd206af5dfc180cad2cc37c109d90",
+   "shape": [
+    143,
+    2
+   ],
+   "dtype": "int64"
+  },
+  "contexts.json": {
+   "sha256": "3290df10ae6c592f674074f6a0360b0741377b020027a2987b69865ef16b8bae"
+  },
+  "meta": {
+   "model": "gpt2",
+   "dtype": "float32",
+   "load_in_4bit": false,
+   "n_pairs": 143,
+   "logits_rel_err": 7.168928277678788e-07,
+   "seed": 2
+  }
+ },
+ "gemma4b_s0": {
+  "G.npy": {
+   "sha256": "8578aa8d231efaaa834ae5a0d0fdc00a7cec336cbd0178661c2ab017d0db2ee9",
+   "shape": [
+    262208,
+    2560
+   ],
+   "dtype": "float16"
+  },
+  "E_base.npy": {
+   "sha256": "e535cc2513695d2d2920330dfce714c35354b37972afbeb699797d05cbc3f9a0",
+   "shape": [
+    300,
+    2560
+   ],
+   "dtype": "float32"
+  },
+  "E_target.npy": {
+   "sha256": "9faefbdbc286caa33b27244b20352920f6d74611b4b5e6bbdcca060ca4a83f77",
+   "shape": [
+    300,
+    2560
+   ],
+   "dtype": "float32"
+  },
+  "pairs.npy": {
+   "sha256": "8457bf67a970de9ee104007d9d945f9f96e87efdc0ac029ea6c5f2163662212d",
+   "shape": [
+    144,
+    2
+   ],
+   "dtype": "int64"
+  },
+  "contexts.json": {
+   "sha256": "de2869b42a00298dbfc56858f7df1980e1ca0b8ffd58f8ba4d41e6e5fc32a662"
+  },
+  "meta": {
+   "model": "google/gemma-3-4b-pt",
+   "dtype": "bfloat16",
+   "load_in_4bit": true,
+   "n_pairs": 144,
+   "logits_rel_err": 0.0034569159615784883,
+   "seed": 0
+  }
  }
 }
