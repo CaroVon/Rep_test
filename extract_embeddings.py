@@ -66,10 +66,18 @@ def make_pairs(tok):
 
 
 def make_contexts(rng, n):
-    prefixes = ["", "Every day, ", "At work, ", "Honestly, "]
-    adv = ["usually", "often", "always", "never", "sometimes", "rarely", "really", "also", "just", "still", ""]
-    base_s = ["I", "You", "We", "They", "People", "Students", "Many people", "The workers"]
-    targ_s = ["He", "She", "It", "The man", "My sister", "The teacher", "This company", "My brother"]
+    # symmetric templates: same prefixes/adverbs for both groups, only the subject differs
+    # (expanded per EXPERIMENT_REVIEW_AND_FIXES.md section 2.3; keep _SUBJ in steer_compare_v3.py in sync)
+    prefixes = ["", "Every day, ", "At work, ", "Honestly, ", "Today, ", "In this case, ",
+                "Lately, ", "At home, ", "Over time, ", "Usually, "]
+    adv = ["usually", "often", "always", "never", "sometimes", "rarely", "really", "also", "just",
+           "still", "typically", "generally", "now", ""]
+    base_s = ["I", "You", "We", "They", "People", "Students", "Many people", "The workers",
+              "Our customers", "These kids", "Most doctors", "The engineers", "Both of them",
+              "Parents", "Farmers", "Voters"]
+    targ_s = ["He", "She", "It", "The man", "My sister", "The teacher", "This company", "My brother",
+              "Our customer", "That kid", "The doctor", "The engineer", "Her mother",
+              "The farmer", "The voter", "Everyone"]
     def sample(subs):
         allc = [f"{p}{s} {a}".strip() for p in prefixes for s in subs for a in adv]
         rng.shuffle(allc); return allc[:n]

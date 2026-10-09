@@ -1,0 +1,10 @@
+||lambda0||=107.83  ||probe||=0.3820
+first-step direction cosine (ours raw-probe vs author): 1.000000
+first-step direction cosine (ours normalized-probe):    1.000000
+Traceback (most recent call last):
+  File "<stdin>", line 61, in <module>
+  File "<stdin>", line 49, in traj_author
+  File "/home/administrator/dev/ML/dual-steering/information_geometry/steering/method.py", line 97, in m_steering
+    prob = F.softmax(topk_vals, dim=-1)
+           ^
+NameError: name 'F' is not defined
