@@ -74,3 +74,16 @@ agreement to ~5e-6). The V2 observation "dual at alpha=5e-3 has ~3x the
 off-target KL of euclid on the ctx probe" is therefore a property of the
 setting (probe, step size, contexts, KL definition), not of our
 implementation. G0's WP1 criterion is met.
+
+## Addendum (V4, 2026-10-10)
+
+- Region-C re-verification (task-doc decision-tree requirement for the
+  C1-reversal branch): first-step direction cosine vs the author's cg_solve on
+  a natural-text (C4, Park-filtered) context = **1.000000**
+  (repro_check_c4.json / repro_check_c4.txt). Implementation equivalence
+  extends beyond template contexts.
+- Author notification about the missing `import torch.nn.functional as F` in
+  `information_geometry/steering/method.py`: **not yet sent**. Recommended
+  channel: GitHub issue on KihoPark/dual-steering with the one-line fix and
+  the cosine-1.000000 equivalence table above as evidence. No e-mail or
+  account channel is available from this execution environment.

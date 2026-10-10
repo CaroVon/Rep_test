@@ -1,0 +1,2 @@
+region-C context: first-step direction cosine (ours vs author cg_solve) = 1.000000
+context norm = 110.8, probe norm = 0.5485

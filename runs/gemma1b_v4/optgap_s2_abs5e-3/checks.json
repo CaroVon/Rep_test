@@ -1,0 +1,29 @@
+{
+ "logits_rel_err": 0.0026462292298674583,
+ "probe_heldout_auc": 1.0,
+ "n_base_raw": 300,
+ "n_base_kept": 292,
+ "n_target_raw": 300,
+ "n_target_kept": 258,
+ "n_steered": 60,
+ "cos_euclid_causal": 0.9962974786758423,
+ "alpha": 0.005,
+ "probe_cos": {
+  "ctx-unemb": 0.4622034795410302,
+  "ctx-dmd": 0.43902520869514067,
+  "unemb-dmd": 0.9110035416751717
+ },
+ "filter": "mass",
+ "park_mass": 0.7,
+ "cf0_mean_test": 0.5726425101359686,
+ "alpha_over_mean_eig_S0": 5.593919702990427,
+ "sigma_t_diag": {
+  "trace_mean": 0.882381829298649,
+  "eig_max_mean": 0.12375848143373003,
+  "eig_p1_mean": 0.016096189638132842,
+  "eig_p10_mean": 0.0004997637496463734,
+  "eig_p50_mean": 1.4223757525065041e-05,
+  "frac_eig_above_alpha": 0.025868055555555557
+ },
+ "ci_type": "cluster"
+}

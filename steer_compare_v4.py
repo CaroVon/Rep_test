@@ -184,13 +184,14 @@ def _np_kl_parts(self, z0, zt):
 def _np_kl_full(self, p0, p): return float((p0 * (np.log(p0 + 1e-300) - np.log(p + 1e-300))).sum())
 def _np_topk_in(self, p, ids, k):
     idx = np.argpartition(-p, k)[:k]; return bool(np.isin(idx, ids).all()), float(p[idx].sum())
-def _np_hyperplane_min(self, lam0, beta, c, topk, iters=40, tol=1e-6):
-    """argmin_{lam: beta.lam = c} KL(P_lam0 || P_lam)  (Park 2026, Thm 3.1). Newton with top-K Hessian, exact f and gradient."""
+def _np_hyperplane_min(self, lam0, beta, c, topk, iters=40, tol=1e-6, lam_init=None):
+    """argmin_{lam: beta.lam = c} KL(P_lam0 || P_lam)  (Park 2026, Thm 3.1). Newton with top-K Hessian, exact f and gradient.
+    lam_init: optional starting point ON the hyperplane (e.g. the method's endpoint); default = projection of lam0."""
     G = self.G; beta = np.asarray(beta, np.float64); lam0 = np.asarray(lam0, np.float64); phi0 = self.phi(lam0.astype(np.float32))
     def fg(lam):
         lg = (G @ lam.astype(np.float32)).astype(np.float64); m = lg.max(); lse = m + np.log(np.exp(lg - m).sum())
         p = np.exp(lg - lse); phi = (p.astype(np.float32) @ G).astype(np.float64); return lse - phi0 @ lam, phi - phi0, lg, p
-    lam = lam0 + (c - beta @ lam0) / (beta @ beta) * beta
+    lam = np.asarray(lam_init, np.float64).copy() if lam_init is not None else lam0 + (c - beta @ lam0) / (beta @ beta) * beta
     for it in range(iters):
         f, g, lg, p = fg(lam)
         idx = np.argpartition(-lg, topk)[:topk] if topk < len(lg) else np.arange(len(lg))
@@ -236,13 +237,13 @@ def _t_kl_full(self, p0, p): t = self.t; return float((p0.double() * (t.log(p0.d
 def _t_topk_in(self, p, ids, k):
     t = self.t; v, i = t.topk(p, k); idsT = t.as_tensor(np.asarray(ids), dtype=t.long, device=p.device)
     return bool(t.isin(i, idsT).all().item()), float(v.sum().item())
-def _t_hyperplane_min(self, lam0, beta, c, topk, iters=40, tol=1e-6):
+def _t_hyperplane_min(self, lam0, beta, c, topk, iters=40, tol=1e-6, lam_init=None):
     t = self.t; G = self.G; dev = self.dev
     beta = t.as_tensor(np.asarray(beta), dtype=t.float64, device=dev); lam = lam0.double().clone(); phi0 = (t.softmax(G @ lam0.float(), dim=0) @ G).double()
     def fg(l):
         lg = (G @ l.float()).double(); lse = t.logsumexp(lg, 0); p = t.exp(lg - lse)
         phi = (p.float() @ G).double(); return float((lse - phi0 @ l).item()), phi - phi0, lg, p
-    lam = lam + (float(c) - beta @ lam) / (beta @ beta) * beta
+    lam = lam_init.double().clone() if lam_init is not None else lam + (float(c) - beta @ lam) / (beta @ beta) * beta
     for it in range(iters):
         f, g, lg, p = fg(lam)
         k = min(topk, len(lg)); idx = t.topk(lg, k).indices
@@ -501,7 +502,7 @@ def main():
                 pn = m.split("_")[-1]
                 if pn not in pr or res[m][n].get("_lam") is None: continue
                 lam_end = res[m][n]["_lam"]; bt = pr[pn]; c = float(bt @ ops.tonp(lam_end).astype(np.float64))
-                lam_opt = ops.hyperplane_min(lam0, bt, c, topk); p_end = ops.probs(lam_end); p_opt = ops.probs(lam_opt)
+                lam_opt = ops.hyperplane_min(lam0, bt, c, topk, iters=120, lam_init=lam_end); p_end = ops.probs(lam_end); p_opt = ops.probs(lam_opt)
                 ke, ko = ops.kl_full(p0, p_end), ops.kl_full(p0, p_opt)
                 rows.append([int(i), m, pn, round(c, 5), round(ke, 5), round(ko, 5), round(ke - ko, 5),
                              round(ops.stats(p_end)[0], 5), round(ops.stats(p_opt)[0], 5)])

@@ -448,5 +448,340 @@
    "logits_rel_err": 0.0034569159615784883,
    "seed": 0
   }
+ },
+ "gemma1b_c4_s0": {
+  "G.npy": {
+   "sha256": "037fa3f5da7885b1a9d9166dc1b885c56c974f5e1fde5cca9b52b87890447538",
+   "shape": [
+    262144,
+    1152
+   ],
+   "dtype": "float16"
+  },
+  "E_base.npy": {
+   "sha256": "a5a204e2adf943b3b509bad82abdb6f23d0a819191c7b605430f1f7e3136d351",
+   "shape": [
+    560,
+    1152
+   ],
+   "dtype": "float32"
+  },
+  "E_target.npy": {
+   "sha256": "1cfc5ac72552d005426be7dda80e44f0a8a194777662658e85a350abd3aa2882",
+   "shape": [
+    26,
+    1152
+   ],
+   "dtype": "float32"
+  },
+  "pairs.npy": {
+   "sha256": "8457bf67a970de9ee104007d9d945f9f96e87efdc0ac029ea6c5f2163662212d",
+   "shape": [
+    144,
+    2
+   ],
+   "dtype": "int64"
+  },
+  "contexts.json": {
+   "sha256": "24d6bef7fa432e621afdaac9434a8dc4148fd9b1c4ecd11a4f6d44a10b7cdada"
+  },
+  "meta": {
+   "model": "google/gemma-3-1b-pt",
+   "dtype": "bfloat16",
+   "load_in_4bit": false,
+   "n_pairs": 144,
+   "logits_rel_err": 0.0027794730849564075,
+   "seed": 0,
+   "concept": "third",
+   "ctx_source": "c4"
+  },
+  "corpus": "allenai/c4 en (streaming, shuffle seed derived, 0.5 thinning)",
+  "docs_scanned": 5001
+ },
+ "gemma1b_c4_s1": {
+  "G.npy": {
+   "sha256": "037fa3f5da7885b1a9d9166dc1b885c56c974f5e1fde5cca9b52b87890447538",
+   "shape": [
+    262144,
+    1152
+   ],
+   "dtype": "float16"
+  },
+  "E_base.npy": {
+   "sha256": "186e1e0ba585a6d81ef33ce372cb80360bd218b8acfdde032a8a7216ba76000a",
+   "shape": [
+    612,
+    1152
+   ],
+   "dtype": "float32"
+  },
+  "E_target.npy": {
+   "sha256": "a54be0aded41379aa0f277644144ad35f3ae9ad4775b9a6eee63d579d0e68176",
+   "shape": [
+    29,
+    1152
+   ],
+   "dtype": "float32"
+  },
+  "pairs.npy": {
+   "sha256": "8457bf67a970de9ee104007d9d945f9f96e87efdc0ac029ea6c5f2163662212d",
+   "shape": [
+    144,
+    2
+   ],
+   "dtype": "int64"
+  },
+  "contexts.json": {
+   "sha256": "90c5bdf9a2851a2f7f1449be336b96be1222bc27210a23fc0c63005ca3cd4b08"
+  },
+  "meta": {
+   "model": "google/gemma-3-1b-pt",
+   "dtype": "bfloat16",
+   "load_in_4bit": false,
+   "n_pairs": 144,
+   "logits_rel_err": 0.002744905184954405,
+   "seed": 1,
+   "concept": "third",
+   "ctx_source": "c4"
+  },
+  "corpus": "allenai/c4 en (streaming, shuffle seed derived, 0.5 thinning)",
+  "docs_scanned": 5001
+ },
+ "gemma1b_c4_s2": {
+  "G.npy": {
+   "sha256": "037fa3f5da7885b1a9d9166dc1b885c56c974f5e1fde5cca9b52b87890447538",
+   "shape": [
+    262144,
+    1152
+   ],
+   "dtype": "float16"
+  },
+  "E_base.npy": {
+   "sha256": "99fc0876776d9ccf1f0b71587fdd926e8cb775f3bcd22caafe98540e7e3b9fd5",
+   "shape": [
+    594,
+    1152
+   ],
+   "dtype": "float32"
+  },
+  "E_target.npy": {
+   "sha256": "b227784227f639c441a354e522cef20c3805dde9de9de19a47d6ea0b80b9ec1d",
+   "shape": [
+    25,
+    1152
+   ],
+   "dtype": "float32"
+  },
+  "pairs.npy": {
+   "sha256": "8457bf67a970de9ee104007d9d945f9f96e87efdc0ac029ea6c5f2163662212d",
+   "shape": [
+    144,
+    2
+   ],
+   "dtype": "int64"
+  },
+  "contexts.json": {
+   "sha256": "d264105c71a54b249bfb7d187eeddd4deb22006d6d4a991e0682a65e4db69030"
+  },
+  "meta": {
+   "model": "google/gemma-3-1b-pt",
+   "dtype": "bfloat16",
+   "load_in_4bit": false,
+   "n_pairs": 144,
+   "logits_rel_err": 0.0026307757943868637,
+   "seed": 2,
+   "concept": "third",
+   "ctx_source": "c4"
+  },
+  "corpus": "allenai/c4 en (streaming, shuffle seed derived, 0.5 thinning)",
+  "docs_scanned": 5001
+ },
+ "gemma1b_ing_s0": {
+  "G.npy": {
+   "sha256": "037fa3f5da7885b1a9d9166dc1b885c56c974f5e1fde5cca9b52b87890447538",
+   "shape": [
+    262144,
+    1152
+   ],
+   "dtype": "float16"
+  },
+  "E_base.npy": {
+   "sha256": "68ffb55c1fc802678a12ce696f938ddc95705b5b1bb38e07fd314ddc8c6cc6cd",
+   "shape": [
+    300,
+    1152
+   ],
+   "dtype": "float32"
+  },
+  "E_target.npy": {
+   "sha256": "3e60fb6e7f4b0787ff7759a8c9282e73a9bf7a73897f9d1bc41a8284f7cd780c",
+   "shape": [
+    300,
+    1152
+   ],
+   "dtype": "float32"
+  },
+  "pairs.npy": {
+   "sha256": "5d69d96ff4f0e812a1820a767ed0c9dbf8a6691ca8b8ee370eed44900d77b3c6",
+   "shape": [
+    143,
+    2
+   ],
+   "dtype": "int64"
+  },
+  "contexts.json": {
+   "sha256": "8f16ced5571f425d413ed35df46a31e143a335c1fe8c69e3ddceae986be293e0"
+  },
+  "meta": {
+   "model": "google/gemma-3-1b-pt",
+   "dtype": "bfloat16",
+   "load_in_4bit": false,
+   "n_pairs": 143,
+   "logits_rel_err": 0.0028589738067239523,
+   "seed": 0,
+   "concept": "ing",
+   "ctx_source": "templates"
+  }
+ },
+ "gemma1b_ing_s1": {
+  "G.npy": {
+   "sha256": "037fa3f5da7885b1a9d9166dc1b885c56c974f5e1fde5cca9b52b87890447538",
+   "shape": [
+    262144,
+    1152
+   ],
+   "dtype": "float16"
+  },
+  "E_base.npy": {
+   "sha256": "d84352a93dc2e95ef4f1bab562e25ec91c2997a649d2952e4ee3a507729d3bf3",
+   "shape": [
+    300,
+    1152
+   ],
+   "dtype": "float32"
+  },
+  "E_target.npy": {
+   "sha256": "57fc0ed31d18e6ecb5420d59bcb526ae112916d09a3d8559d3ae959b2b4679cf",
+   "shape": [
+    300,
+    1152
+   ],
+   "dtype": "float32"
+  },
+  "pairs.npy": {
+   "sha256": "5d69d96ff4f0e812a1820a767ed0c9dbf8a6691ca8b8ee370eed44900d77b3c6",
+   "shape": [
+    143,
+    2
+   ],
+   "dtype": "int64"
+  },
+  "contexts.json": {
+   "sha256": "e23dea1d68583106a340d3d0aa9c595dc635fb78be071af8a89407213a791494"
+  },
+  "meta": {
+   "model": "google/gemma-3-1b-pt",
+   "dtype": "bfloat16",
+   "load_in_4bit": false,
+   "n_pairs": 143,
+   "logits_rel_err": 0.0027168109081685543,
+   "seed": 1,
+   "concept": "ing",
+   "ctx_source": "templates"
+  }
+ },
+ "gemma1b_ing_s2": {
+  "G.npy": {
+   "sha256": "037fa3f5da7885b1a9d9166dc1b885c56c974f5e1fde5cca9b52b87890447538",
+   "shape": [
+    262144,
+    1152
+   ],
+   "dtype": "float16"
+  },
+  "E_base.npy": {
+   "sha256": "d0a43553dae4cc0eeb529d8edaa2439cd1d7e7b130312eba01e8c17e3523102d",
+   "shape": [
+    300,
+    1152
+   ],
+   "dtype": "float32"
+  },
+  "E_target.npy": {
+   "sha256": "ed53a96fbab2203be8b122716c92906c080cf34c2464511f88363157fb36943d",
+   "shape": [
+    300,
+    1152
+   ],
+   "dtype": "float32"
+  },
+  "pairs.npy": {
+   "sha256": "5d69d96ff4f0e812a1820a767ed0c9dbf8a6691ca8b8ee370eed44900d77b3c6",
+   "shape": [
+    143,
+    2
+   ],
+   "dtype": "int64"
+  },
+  "contexts.json": {
+   "sha256": "883abab48449c25c5e4c857a2c5aebed4728091b60e500452aba9040cf923542"
+  },
+  "meta": {
+   "model": "google/gemma-3-1b-pt",
+   "dtype": "bfloat16",
+   "load_in_4bit": false,
+   "n_pairs": 143,
+   "logits_rel_err": 0.0026462292298674583,
+   "seed": 2,
+   "concept": "ing",
+   "ctx_source": "templates"
+  }
+ },
+ "gpt2_ing_s0": {
+  "G.npy": {
+   "sha256": "fa7e7f5f2ea351092c6949e302687fe22e707076f38ea7e8de98632cceb73d68",
+   "shape": [
+    50257,
+    768
+   ],
+   "dtype": "float32"
+  },
+  "E_base.npy": {
+   "sha256": "3b64551e5e107ac190de93427c5f470329560e744bf5852c93cbab4678e4ba70",
+   "shape": [
+    300,
+    768
+   ],
+   "dtype": "float32"
+  },
+  "E_target.npy": {
+   "sha256": "51d7aa1eba779c27065423df8f9832af267245e6b292a7793c5a91a0e45d5ad7",
+   "shape": [
+    300,
+    768
+   ],
+   "dtype": "float32"
+  },
+  "pairs.npy": {
+   "sha256": "1bfe04857033d5dcb6c59c2f0c6fe91b9e97eb64c407c188826eabec5c9a950c",
+   "shape": [
+    143,
+    2
+   ],
+   "dtype": "int64"
+  },
+  "contexts.json": {
+   "sha256": "8f16ced5571f425d413ed35df46a31e143a335c1fe8c69e3ddceae986be293e0"
+  },
+  "meta": {
+   "model": "gpt2",
+   "dtype": "float32",
+   "load_in_4bit": false,
+   "n_pairs": 143,
+   "logits_rel_err": 5.227312271927076e-07,
+   "seed": 0,
+   "concept": "ing",
+   "ctx_source": "templates"
+  }
  }
 }
