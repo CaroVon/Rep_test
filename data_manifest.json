@@ -783,5 +783,152 @@
    "concept": "ing",
    "ctx_source": "templates"
   }
+ },
+ "gemma1b_c4big_s0": {
+  "G.npy": {
+   "sha256": "037fa3f5da7885b1a9d9166dc1b885c56c974f5e1fde5cca9b52b87890447538",
+   "shape": [
+    262144,
+    1152
+   ],
+   "dtype": "float16"
+  },
+  "E_base.npy": {
+   "sha256": "6725be688fdfde9c55da72200b4024884b462719cc58c6448e1813ca0aebbd3d",
+   "shape": [
+    1163,
+    1152
+   ],
+   "dtype": "float32"
+  },
+  "E_target.npy": {
+   "sha256": "0854022fb757fdd414985685d5cf5fd159468aa586a91fe26a70ed2524c20696",
+   "shape": [
+    56,
+    1152
+   ],
+   "dtype": "float32"
+  },
+  "pairs.npy": {
+   "sha256": "8457bf67a970de9ee104007d9d945f9f96e87efdc0ac029ea6c5f2163662212d",
+   "shape": [
+    144,
+    2
+   ],
+   "dtype": "int64"
+  },
+  "contexts.json": {
+   "sha256": "230834578518997c560657f990894ee8f57de34c206cffff363ce6ead1229b13"
+  },
+  "meta": {
+   "model": "google/gemma-3-1b-pt",
+   "dtype": "bfloat16",
+   "load_in_4bit": false,
+   "n_pairs": 144,
+   "logits_rel_err": 0.0027794730849564075,
+   "seed": 0,
+   "concept": "third",
+   "ctx_source": "c4"
+  },
+  "corpus": "allenai/c4 en (streaming, shuffle seed derived, 0.5 thinning)",
+  "docs_scanned": 10001
+ },
+ "gemma1b_c4big_s1": {
+  "G.npy": {
+   "sha256": "037fa3f5da7885b1a9d9166dc1b885c56c974f5e1fde5cca9b52b87890447538",
+   "shape": [
+    262144,
+    1152
+   ],
+   "dtype": "float16"
+  },
+  "E_base.npy": {
+   "sha256": "09ec44194036ecd3af8ad46778e77643d5e5cb3434df054c42c76e73f2ebdaa7",
+   "shape": [
+    1235,
+    1152
+   ],
+   "dtype": "float32"
+  },
+  "E_target.npy": {
+   "sha256": "7b62c1d13e16289fe357b13106ba350b045772f6cdd800418401c0ab0b05e278",
+   "shape": [
+    52,
+    1152
+   ],
+   "dtype": "float32"
+  },
+  "pairs.npy": {
+   "sha256": "8457bf67a970de9ee104007d9d945f9f96e87efdc0ac029ea6c5f2163662212d",
+   "shape": [
+    144,
+    2
+   ],
+   "dtype": "int64"
+  },
+  "contexts.json": {
+   "sha256": "5b27f5c901772ce3550845d95ef4755ab1ead920028e2f7e641d80199475b3ff"
+  },
+  "meta": {
+   "model": "google/gemma-3-1b-pt",
+   "dtype": "bfloat16",
+   "load_in_4bit": false,
+   "n_pairs": 144,
+   "logits_rel_err": 0.002744905184954405,
+   "seed": 1,
+   "concept": "third",
+   "ctx_source": "c4"
+  },
+  "corpus": "allenai/c4 en (streaming, shuffle seed derived, 0.5 thinning)",
+  "docs_scanned": 10001
+ },
+ "gemma1b_c4big_s2": {
+  "G.npy": {
+   "sha256": "037fa3f5da7885b1a9d9166dc1b885c56c974f5e1fde5cca9b52b87890447538",
+   "shape": [
+    262144,
+    1152
+   ],
+   "dtype": "float16"
+  },
+  "E_base.npy": {
+   "sha256": "3306e92c9c0bd523f13cfc9eee6a89d1014680f1d638a34151ec9cf9408e9f7d",
+   "shape": [
+    1183,
+    1152
+   ],
+   "dtype": "float32"
+  },
+  "E_target.npy": {
+   "sha256": "1c9a2422d22e7825a562642f28f2af4c2c0d39b83f2467d4b897f4011841a3f0",
+   "shape": [
+    61,
+    1152
+   ],
+   "dtype": "float32"
+  },
+  "pairs.npy": {
+   "sha256": "8457bf67a970de9ee104007d9d945f9f96e87efdc0ac029ea6c5f2163662212d",
+   "shape": [
+    144,
+    2
+   ],
+   "dtype": "int64"
+  },
+  "contexts.json": {
+   "sha256": "2ae24e730226ea9014f28b512345193b265db35526e86b773256101529ea3179"
+  },
+  "meta": {
+   "model": "google/gemma-3-1b-pt",
+   "dtype": "bfloat16",
+   "load_in_4bit": false,
+   "n_pairs": 144,
+   "logits_rel_err": 0.0026307757943868637,
+   "seed": 2,
+   "concept": "third",
+   "ctx_source": "c4"
+  },
+  "corpus": "allenai/c4 en (streaming, shuffle seed derived, 0.5 thinning)",
+  "docs_scanned": 10001
  }
 }

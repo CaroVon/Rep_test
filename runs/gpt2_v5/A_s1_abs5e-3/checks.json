@@ -1,0 +1,41 @@
+{
+ "logits_rel_err": 6.112086907705816e-07,
+ "probe_heldout_auc": 0.8870446949526992,
+ "n_base_raw": 300,
+ "n_base_kept": 277,
+ "n_target_raw": 300,
+ "n_target_kept": 254,
+ "n_steered": 60,
+ "cos_euclid_causal": 0.9738115072250366,
+ "alpha": 0.005,
+ "probe_cos": {
+  "ctx-unemb": 0.18944208966591414,
+  "ctx-dmd": 0.19761917635230095,
+  "unemb-dmd": 0.9593183387856907
+ },
+ "filter": "mass",
+ "park_mass": 0.7,
+ "cf0_mean_test": 0.46027656147877377,
+ "alpha_over_mean_eig_S0": 0.3296963642469868,
+ "sigma_t_diag": {
+  "trace_mean": 6.382490017892927,
+  "eig_max_mean": 0.6304375405715864,
+  "eig_p1_mean": 0.1293230847409375,
+  "eig_p10_mean": 0.014914542688444558,
+  "eig_p50_mean": 0.0013495634557523645,
+  "frac_eig_above_alpha": 0.22630208333333335
+ },
+ "ci_type": "cluster",
+ "v5": {
+  "with_freq": true,
+  "freq_info": {
+   "n_ctx": 300,
+   "weight_entropy": 6.794762842890346,
+   "weight_top1": 0.0353987479208566,
+   "mean_eig_Sw": 0.009132895629124732
+  },
+  "null_draws": 3,
+  "null_ctx": 30,
+  "n_clusters": 16
+ }
+}

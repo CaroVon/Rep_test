@@ -88,3 +88,128 @@ changes made per the task document itself:
    Consequence for WP-F: timing.csv of gemma1b_v4/optgap_s0_abs5e-3
    includes ~10 minutes of contention-inflated steering seconds; the
    timing analysis therefore uses the 19 uncontended WP-A1 runs.
+
+## V5
+
+1. No code modifications by the fixer. This section is the first V5 entry:
+   before WP-7, DEVIATIONS.md had no V5 section at all. The workflow's
+   修复员 agent is invoked only on failures (selftest / synthetic / WP-0
+   parity / WP-1 regression) and is required to append every diff here;
+   none of those failure paths triggered (commands.log: WP-0 passed on the
+   first recorded round; WP-1 passed after the rename in item 2). Limit of
+   verification: the provided scripts (steer_compare_v5.py / analyze_v5.py /
+   selfcheck_v5.py) are untracked in git and no pristine copy exists in the
+   repo, so a byte-level diff against the delivered version is impossible;
+   the operative evidence that the shipped algorithm is unchanged is the
+   WP-1 gate (max abs diff 0.0 over all shared numeric columns vs V4,
+   AGGREGATE_V5.md section 2a). aggregate_v5.py is new code written by the
+   WP-5 summary writer, not a modification of provided code.
+2. WP-1 first round used the task-doc example output names reg_s0_abs5e-3,
+   so selfcheck's _v5->_v4 whole-path substitution found no V4 reference
+   (F7 "no reference" WARN = vacuous pass). Fix: renamed the two dirs to
+   s0_abs5e-3 (each run's config.json args.out keeps the original reg_
+   name as evidence) and added a direct NaN-aware diff gate (shared numeric
+   columns <=1e-6) per the amended workflow script
+   (.zcode/workflow-drafts/v5_final_experiment.ts:273-297). Both gates then
+   passed (WP1_DIRECT_DIFF: PASS; selfcheck 0 FAIL).
+3. GPU exclusivity check (task doc rule 8, in response to the V4 orphan
+   incident): every GPU run was dispatched by the workflow orchestrator
+   only after `pgrep -af steer_compare_v5` found no running process (up to
+   10 retries x 60 s), one serial runOne at a time
+   (.zcode/workflow-drafts/v5_final_experiment.ts:62-104). No concurrent
+   batch was started in V5. No GPU-wait event is retrievable: the workflow
+   run journal is not accessible from WP-7 (introspection unavailable), and
+   the CLI logs contain no "GPU 被占用" event - consistent with no
+   contention occurring, but stated as absence of evidence, not as a
+   positive check result.
+4. Failed runs and reruns: none in the final accounting. P0 6/6, P1 12/12
+   (incl. 3 C4 10000-doc extractions + 3 Cbig runs), P2 5/5 - all 25 model
+   runs have complete summary.csv (AGGREGATE_V5.md section 1 lists all 27
+   runs incl. 2 synthetic; CONCLUSIONS_V5.md section 1). runOne's
+   crash->rmtree->retry-once path left no artifacts (no partial or
+   duplicate output dirs exist). The two gate-level failure-and-fix events
+   were: (a) WP-1 naming (item 2); (b) WP-5 round 1 re-ran analyze_v5 on
+   results_v5/full because the first full analysis (2026-10-10 23:42,
+   6 groups) predated the last 5 P2 runs - RNG-seed determinism check
+   confirmed prefix-identical rows (commands.log WP-5 block).
+5. Timing anomaly: runs/gemma1b_v5/A_s0_abs5e-3 runtime_s = 2652.6 vs
+   A_s1 1837.4 / A_s2 1809.0 (+44%), the first P0 run; cause not
+   investigated (already recorded in the mid-term STATUS.md section 5).
+   The --n_ctx 5 timing probe's output dir (runs/gemma1b_v5/probe_timing)
+   was deleted by the workflow after P0, so its numbers are unretained.
+   All other runtimes are homogeneous within their groups (config.json
+   runtime_s listed in commands.log WP-7 block).
+6. gpt2 configuration difference vs V4: the P1/P2 gpt2 runs
+   (runs/gpt2_v5/A_s{0,1,2}_abs5e-3, runs/gpt2_v5/ing_s0_abs5e-3) used
+   --topk 20000, following the V5 task doc section 5 "统一参数
+   --topk 20000"; the V3/V4 gpt2 convention was --topk 5000. The WP-1
+   gpt2 regression run kept 5000 (its config.json). So the V5 gpt2 P1/P2
+   runs are not directly comparable to V4 gpt2 runs at matched topk
+   (also a contributor to their longer runtime_s 1253.8-1443.7 vs the
+   397.4 s regression run). Recorded as a configuration difference, not
+   an error.
+7. data_manifest.json "docs_scanned": 10001 for the gemma1b_c4big_s{0,1,2}
+   entries is a derived value: extract_embeddings.py:125-132 counts
+   n_docs+1 before breaking (V4's manifest recorded 5001 for
+   --c4_docs 5000, same off-by-one), and the extraction stdout was not
+   retained. All sha256/shape/dtype values in those entries were computed
+   from the files directly.
+8. AGGREGATE_V5.md sections 3.5/8 count the Cbig runs as "3 units"
+   (per-run counting); CONCLUSIONS_V5.md section 8 item 17 keeps the
+   strict independent-unit definition (Cbig shares the same 3 units as C,
+   differing only in dataset) and does not add them.
+9. The mid-term STATUS.md (written after P0) reported P1/P2 as not run -
+   true at the time of writing; superseded by the final STATUS.md written
+   in WP-7.
+10. Tags v5-g6 / v5-g7 / v5-final all point at the single WP-7 commit: no
+    intermediate commits were made at the G6/G7 gates during V5 (all V5
+    work was committed at wrap-up), so the gates cannot be tagged at
+    distinct commits.
+11. commands.log was completed in WP-7: the P1/P2 phase command lines were
+    appended retroactively, transcribed verbatim from each run's
+    config.json args (the orchestrator executed them; no shell history was
+    logged for that phase). Marked as such in the log.
+12. WP-7 code change to a provided script (made by the wrap-up agent, NOT
+    the fixer; item 1 above remains accurate for the fixer): the pre-commit
+    security hook (Mimosa) blocked the delivery commit, flagging
+    analyze_v5.py:130 - `open(f"{a.out}/analysis_v5.md", "w")` - as a
+    high-severity path traversal (the `--out` CLI argument was used
+    unvalidated as a write target). Fix: main() now resolves `--out` to an
+    absolute path and raises SystemExit if it falls outside the repository
+    root, before any directory/file is created. Pure I/O-layer guard: no
+    change to any computation, statistic, or output format. Diff:
+    ```diff
+    -    a = ap.parse_args(); os.makedirs(a.out, exist_ok=True); rng = np.random.default_rng(a.seed)
+    +    a = ap.parse_args()
+    +    # security guard (WP-7, pre-commit hook finding): --out must resolve inside this repository
+    +    # (no path traversal); input run dirs are read-only and stay CLI-controlled.
+    +    _root = os.path.dirname(os.path.abspath(__file__))
+    +    _out = os.path.abspath(a.out)
+    +    if _out != _root and not _out.startswith(_root + os.sep):
+    +        raise SystemExit(f"--out must stay inside the repository: {a.out!r}")
+    +    a.out = _out
+    +    os.makedirs(a.out, exist_ok=True); rng = np.random.default_rng(a.seed)
+    ```
+    Non-regression evidence (analyze_v5.py RNG is seeded, default
+    `--seed 0`): re-ran the exact `results_v5/p0` invocation (2 groups,
+    5 pairs) into `results_v5/_guard_check` - all six output files
+    byte-identical to `results_v5/p0` (metric_panel.csv,
+    capture_ratio.csv, advantage_regression.csv, predictor_corr.csv,
+    null_control_summary.csv, analysis_v5.md); the guard's rejection of
+    `/tmp/escape_out` and `../outside` verified; check directory removed
+    afterwards. The already-delivered `results_v5/p0` and
+    `results_v5/full` were produced by the pre-guard code and are
+    unaffected (the guard only constrains where NEW outputs may be
+    written).
+    Second hook iteration: the static CWE-22 check does not model the
+    upstream guard and re-flagged the same statement (now at line 138)
+    `open(f"{a.out}/analysis_v5.md", "w")` as the traversal sink. Second
+    change (same item, I/O layer only): the markdown is now accumulated in
+    memory and written once via `Path(a.out, "analysis_v5.md").write_text(...)`
+    (the CSV reads switched to `os.path.join`); the byte-identity check
+    above was re-run AFTER this second change and passed again (all six
+    files identical). Mimosa deep scan of analyze_v5.py: 0 findings
+    (scanId scan-2026-10-10T20-03-35.687Z-9f5787e067a1, seal
+    sha256:71f6ff6c158a3cb848ea438ade04c889ba3a54a977527c8977c5c59e0ce8b5b2);
+    the two blocked attempts flagged :130 / :138 (scanIds
+    ...bf81eec225e0 predecessor listed the :138 instance).

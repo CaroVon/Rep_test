@@ -87,3 +87,55 @@ implementation. G0's WP1 criterion is met.
   channel: GitHub issue on KihoPark/dual-steering with the one-line fix and
   the cosine-1.000000 equivalence table above as evidence. No e-mail or
   account channel is available from this execution environment.
+
+## Addendum (V5 WP-7, 2026-10-11): GitHub issue draft — NOT submitted
+
+Task doc FINAL_EXPERIMENT_PROMPT_V5.md section 5 WP-7 item 5 requires an
+issue draft here; per instruction it is **drafted only, not submitted** (no
+submission was made from this environment; status of any actual report
+remains "not sent").
+
+------------------------------------------------------------------------
+**Repo:** KihoPark/dual-steering
+**Title:** `m_steering` raises NameError: `F` is not imported in `information_geometry/steering/method.py`
+
+**Body:**
+
+`information_geometry/steering/method.py` uses `F.softmax` inside
+`m_steering`, but the module never imports `torch.nn.functional`, so calling
+`m_steering` fails with:
+
+```
+NameError: name 'F' is not defined
+```
+
+One-line fix (top of `information_geometry/steering/method.py`, next to the
+existing `import torch`):
+
+```diff
++import torch.nn.functional as F
+ import torch
+```
+
+Evidence the fix is complete (from an independent reimplementation compared
+step-by-step against this repo, gemma-3-1b, fp32 on CUDA, alpha = 5e-3,
+top-K = 20000, 20 CG iterations):
+
+- First-step direction of `m_steering` (author's `cg_solve` with the
+  `F`-import injected at runtime) vs our reimplementation of the dual MD
+  update: **cosine = 1.000000** (both with the raw probe and with the
+  normalized probe).
+- 20-step trajectory at the author's default step size 2.0 (same context,
+  `m_steering` with the import injected vs ours): max relative difference of
+  P(W=1) over 20 steps = 4.8e-06; max abs entropy difference = 1.4e-05.
+- Same cosine = 1.000000 first-step agreement on a natural-text (C4,
+  Park-filtered) context, so the equivalence is not template-specific.
+
+No other changes were needed to run the method numerically; everything else
+in the file worked as written once `F` was defined.
+
+------------------------------------------------------------------------
+
+(Draft ends. Internal reference for the numbers: sections 1-2 and the V4
+addendum of this file; raw values in repro_check_data.json /
+repro_check_traj.json / repro_check_c4.json.)

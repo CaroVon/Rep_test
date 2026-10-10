@@ -165,3 +165,147 @@ python steer_compare_v4.py --data_dir data/gemma1b_s0 ... --alpha_abs 1e-1 --opt
 python aggregate_v4.py
 # WP-B decomposition, WP-F timing, region-C author-code check (repro_check_c4): heredoc scripts, outputs in AGGREGATE_V4.md / repro_check_c4.txt
 # CONCLUSIONS_V4.md hand-written (conclusions live OUTSIDE the generated file per task doc section 4)
+
+=== V5 session start 2026-10-10T17:28:34+08:00 ===
+# HEAD 65d05830be19b7d7f0e944d5acd3823220138966; PY=/home/administrator/dev/ML/lrg_env/bin/python; task doc FINAL_EXPERIMENT_PROMPT_V5.md
+# orchestration: .zcode/workflow-drafts/v5_final_experiment.ts (amended ~12:56; first round used reg_ output names, see WP-1 note)
+
+# ---WP-0: selftest + dual-backend synthetic + parity (files written 12:28-12:32)---
+$PY steer_compare_v5.py --selftest
+$PY steer_compare_v5.py --synthetic --backend numpy --n_ctx 12 --max_steps 150 --topk 1500 --alpha_abs 5e-3 --with_freq --null_draws 2 --null_ctx 5 --out runs/syn_v5_numpy
+$PY steer_compare_v5.py --synthetic --backend torch --n_ctx 12 --max_steps 150 --topk 1500 --alpha_abs 5e-3 --with_freq --null_draws 2 --null_ctx 5 --out runs/syn_v5_torch
+$PY -c "$WP0_PARITY"   # backend parity per task doc WP-0 table; script text = workflow const WP0_PARITY; output: WP0_PARITY: PASS
+#   (recorded verification rerun at 17:2x by status writer: PASS again; maxima kl_mean 5.000e-05, klpark_mean 2.000e-05,
+#    kl99_mean 5.000e-05, klneu_mean 4.000e-05, cfdev_mean 2.000e-05, rd_mean 2.000e-05, H0/cf0 0.0,
+#    sigma_trace rel 6.91e-08, null rows 90=90, mean_eig_Sw rel 1.868e-08)
+
+# ---WP-1: V4 regression, hard gate (reg runs done by 12:44:29 / 12:51:18)---
+# first round used the task-doc example output names reg_s0_abs5e-3, so selfcheck's _v5->_v4 path substitution
+# found no V4 reference (F7 "no reference" WARN = vacuous pass); fix: rename dirs + add direct-diff gate (workflow
+# amended), then re-run selfcheck with references present
+$PY steer_compare_v5.py --data_dir data/gemma1b_s0 --backend torch --methods grid --topk 20000 --alpha_abs 5e-3 --n_ctx 60 --seed 0 --filter mass --min_mass 0.15 --out runs/gemma1b_v5/reg_s0_abs5e-3
+$PY steer_compare_v5.py --data_dir data/gpt2_s0 --backend torch --methods grid --topk 5000 --alpha_abs 5e-3 --n_ctx 60 --seed 0 --filter mass --min_mass 0.15 --out runs/gpt2_v5/reg_s0_abs5e-3
+#   (dirs later renamed to runs/<model>_v5/s0_abs5e-3; each config.json args.out keeps the original reg_ name as evidence)
+$PY selfcheck_v5.py --runs "runs/gemma1b_v5/reg_*" "runs/gpt2_v5/reg_*" --ref_from _v5 --ref_to _v4   # first round: F7 no reference (vacuous), see note above
+$PY -c "import os
+for m in ['gemma1b', 'gpt2']:
+    s = f'runs/{m}_v5/reg_s0_abs5e-3'; d = f'runs/{m}_v5/s0_abs5e-3'
+    if os.path.isdir(s) and not os.path.isdir(d):
+        os.rename(s, d)
+        print('renamed', s, '->', d)"
+$PY selfcheck_v5.py --runs runs/gemma1b_v5/s0_abs5e-3 runs/gpt2_v5/s0_abs5e-3 --ref_from _v5 --ref_to _v4
+#   -> 2 runs checked, 0 FAIL, 1 WARN (F6 gpt2 cau_ctx reach 0.00; pre-existing in V4, identical value)
+$PY -c "$WP1_DIRECT"   # NaN-aware direct diff vs V4 (shared numeric cols <=1e-6), workflow const WP1_DIRECT; output: WP1_DIRECT_DIFF: PASS
+
+# ---timing probe (~12:52, between gpt2 regression end and A_s0 start; output dir deleted after P0 per workflow)---
+$PY steer_compare_v5.py --data_dir data/gemma1b_s0 --backend torch --methods grid --topk 20000 --n_ctx 5 --with_freq --alpha_abs 5e-3 --null_draws 3 --null_ctx 3 --seed 0 --out runs/gemma1b_v5/probe_timing
+$PY -c "import shutil; shutil.rmtree('runs/gemma1b_v5/probe_timing', ignore_errors=True)"
+
+# ---WP-2 P0: six runs (A_s0 start ~12:53 from runtime_s 2652.6 and summary mtime 13:37:30; C_s2 ends 17:16)---
+for S in 0 1 2: $PY steer_compare_v5.py --data_dir data/gemma1b_s$S --backend torch --methods grid --topk 20000 --n_ctx 60 --with_freq --alpha_abs 5e-3 --seed $S --null_draws 3 --null_ctx 30 --out runs/gemma1b_v5/A_s${S}_abs5e-3
+for S in 0 1 2: $PY steer_compare_v5.py --data_dir data/gemma1b_c4_s$S --backend torch --methods grid --topk 20000 --n_ctx 60 --with_freq --alpha_abs 5e-3 --seed $S --null_draws 3 --null_ctx 30 --filter park --park_mass 0.7 --park_k 3 --out runs/gemma1b_v5/C_s${S}_abs5e-3
+#   runtimes (config.json runtime_s): A 2652.6/1837.4/1809.0 s, C 2980.6/2820.7/2890.0 s; 6/6 exit 0
+
+# ---WP-3: analysis (results_v5/p0 written 17:17:51)---
+$PY analyze_v5.py --out results_v5/p0 --group A_third_a5e-3 runs/gemma1b_v5/A_s0_abs5e-3,runs/gemma1b_v5/A_s1_abs5e-3,runs/gemma1b_v5/A_s2_abs5e-3 --group C_third_a5e-3 runs/gemma1b_v5/C_s0_abs5e-3,runs/gemma1b_v5/C_s1_abs5e-3,runs/gemma1b_v5/C_s2_abs5e-3 --pairs euc_dmd:dua_dmd,cau_unemb:dua_unemb,frq_unemb:dua_unemb,cau_unemb:frq_unemb,frq_dmd:dua_dmd
+
+# ---WP-4: selfcheck (final, all v5 runs)---
+$PY selfcheck_v5.py --runs "runs/*_v5/*"
+#   -> 8 runs checked, 0 FAIL, 7 WARN (all F6 reach_rate 0.00: frq_ctx x6 gemma P0 runs, cau_ctx x1 gpt2 regression run; per-item explanations in STATUS.md section 6)
+
+# ---mid-term status---
+#   STATUS.md (P0-complete mid-term version) written by status writer; P1/P2/WP-5/WP-6/WP-7 not yet run
+
+
+# ---WP-5 round 1 (2026-10-11T03:23+0800; HEAD 65d05830be19b7d7f0e944d5acd3823220138966; PY=/home/administrator/dev/ML/lrg_env/bin/python; 汇总编写员)---
+# pre-step: results_v5/full (written 2026-10-10 23:42) predated the last 5 runs (gemma4b 00:25, gemma1b ing 01:13-02:30, gpt2 ing 02:58);
+#   backed up to /tmp/results_v5_full_backup, then re-ran analyze_v5 with the SAME 6 groups in the SAME order + 3 appended groups:
+$PY analyze_v5.py --out results_v5/full \
+  --group A_third_a5e-3 runs/gemma1b_v5/A_s0_abs5e-3,runs/gemma1b_v5/A_s1_abs5e-3,runs/gemma1b_v5/A_s2_abs5e-3 \
+  --group C_third_a5e-3 runs/gemma1b_v5/C_s0_abs5e-3,runs/gemma1b_v5/C_s1_abs5e-3,runs/gemma1b_v5/C_s2_abs5e-3 \
+  --group Cbig_third_a5e-3 runs/gemma1b_v5/Cbig_s0_abs5e-3,runs/gemma1b_v5/Cbig_s1_abs5e-3,runs/gemma1b_v5/Cbig_s2_abs5e-3 \
+  --group gpt2_A_third_a5e-3 runs/gpt2_v5/A_s0_abs5e-3,runs/gpt2_v5/A_s1_abs5e-3,runs/gpt2_v5/A_s2_abs5e-3 \
+  --group A_third_a2e-2 runs/gemma1b_v5/A_s0_abs2e-2,runs/gemma1b_v5/A_s1_abs2e-2,runs/gemma1b_v5/A_s2_abs2e-2 \
+  --group C_third_a2e-2 runs/gemma1b_v5/C_s0_abs2e-2,runs/gemma1b_v5/C_s1_abs2e-2,runs/gemma1b_v5/C_s2_abs2e-2 \
+  --group gemma4b_A_third_a5e-3 runs/gemma4b_v5/A_s0_abs5e-3 \
+  --group A_ing_a5e-3 runs/gemma1b_v5/ing_s0_abs5e-3,runs/gemma1b_v5/ing_s1_abs5e-3,runs/gemma1b_v5/ing_s2_abs5e-3 \
+  --group gpt2_A_ing_a5e-3 runs/gpt2_v5/ing_s0_abs5e-3 \
+  --pairs euc_dmd:dua_dmd,cau_unemb:dua_unemb,frq_unemb:dua_unemb,cau_unemb:frq_unemb,frq_dmd:dua_dmd
+#   RNG-seed determinism check (prefix rows vs /tmp backup): metric_panel 450=450-prefix-identical, null_control_summary 129,
+#   advantage_regression 900, capture_ratio 85, predictor_corr 90 -> all prefix-identical True; new rows only appended
+$PY aggregate_v5.py
+#   -> wrote runs/AGGREGATE_V5.md (27 runs, 575 panel rows)
+grep -c "^## " runs/AGGREGATE_V5.md   # -> 8 (任务书 §5 的 8 节齐全)
+#   independent spot-check of 22 numbers/row-references in AGGREGATE_V5.md against source CSV/JSON (incl. WP-1 max-diff=0,
+#   K1 C s0 kl_park 0.642 [0.474,0.803] = metric_panel data row 77, capture rho_cau, joint-regression coef, null-control ratio,
+#   timing means, evidence-map row refs): 22/22 PASS (one initial FAIL was the check script's own wrong row index; corrected)
+
+# ---P1/P2 phase command lines (WP-7 retroactive record; executed serially by the workflow orchestrator, each preceded by
+#    a `pgrep -af steer_compare_v5` GPU-exclusivity check, see DEVIATIONS V5.3; command arguments transcribed verbatim from
+#    each run's config.json args - the orchestrator's own dispatch log was not retained). PY=/home/administrator/dev/ML/lrg_env/bin/python
+# NOTE: gpt2 P1/P2 runs use --topk 20000 (task doc section 5 unified params; V4 gpt2 convention was 5000) - DEVIATIONS V5.6
+for S in 0 1 2: $PY steer_compare_v5.py --data_dir data/gemma1b_s$S --backend torch --methods grid --topk 20000 --n_ctx 60 --with_freq --alpha_abs 2e-2 --seed $S --out runs/gemma1b_v5/A_s${S}_abs2e-2
+#   runtime_s 827.6/820.3/805.6 (config.json); done 10-10 17:45-18:12
+for S in 0 1 2: $PY steer_compare_v5.py --data_dir data/gemma1b_c4_s$S --backend torch --methods grid --topk 20000 --n_ctx 60 --with_freq --alpha_abs 2e-2 --seed $S --filter park --park_mass 0.7 --park_k 3 --out runs/gemma1b_v5/C_s${S}_abs2e-2
+#   runtime_s 1006.4/1003.3/1041.8; done 18:27-19:02
+for S in 0 1 2: $PY steer_compare_v5.py --data_dir data/gpt2_s$S --backend torch --methods grid --topk 20000 --n_ctx 60 --with_freq --alpha_abs 5e-3 --seed $S --null_draws 3 --null_ctx 30 --out runs/gpt2_v5/A_s${S}_abs5e-3
+#   runtime_s 1253.8/1306.8/1256.0; done 19:16-19:58
+for S in 0 1 2: $PY extract_embeddings.py --model google/gemma-3-1b-pt --dtype bfloat16 --seed $S --ctx_source c4 --c4_docs 10000 --out_dir data/gemma1b_c4big_s$S
+#   data dirs written 10-10 ~19:59-20:30; "[c4] scanned ..." stdout not retained (docs_scanned=10001 derived, DEVIATIONS V5.7)
+for S in 0 1 2: $PY steer_compare_v5.py --data_dir data/gemma1b_c4big_s$S --backend torch --methods grid --topk 20000 --n_ctx 60 --with_freq --alpha_abs 5e-3 --seed $S --null_draws 3 --null_ctx 30 --filter park --park_mass 0.7 --park_k 3 --out runs/gemma1b_v5/Cbig_s${S}_abs5e-3
+#   runtime_s 3034.8/2836.4/2789.7; done 20:59-23:19; target kept 55/56, 48/52, 59/61 (checks.json)
+$PY analyze_v5.py --out results_v5/full --group A_third_a5e-3 ... --group C_third_a2e-2 --pairs euc_dmd:dua_dmd,cau_unemb:dua_unemb,frq_unemb:dua_unemb,cau_unemb:frq_unemb,frq_dmd:dua_dmd
+#   first full analysis, 6 groups (same first-6 groups/order as the WP-5 round-1 rerun below), written 23:42; superseded - see WP-5 block
+$PY steer_compare_v5.py --data_dir data/gemma4b_s0 --backend torch --methods grid --topk 20000 --n_ctx 60 --with_freq --alpha_abs 5e-3 --seed 0 --null_draws 3 --null_ctx 30 --out runs/gemma4b_v5/A_s0_abs5e-3
+#   runtime_s 4079.3; done 10-11 00:25
+for S in 0 1 2: $PY steer_compare_v5.py --data_dir data/gemma1b_ing_s$S --backend torch --methods grid --topk 20000 --n_ctx 60 --with_freq --alpha_abs 5e-3 --seed $S --null_draws 3 --null_ctx 30 --out runs/gemma1b_v5/ing_s${S}_abs5e-3
+#   runtime_s 2252.0/2358.1/2281.4; done 01:13-02:30
+$PY steer_compare_v5.py --data_dir data/gpt2_ing_s0 --backend torch --methods grid --topk 20000 --n_ctx 60 --with_freq --alpha_abs 5e-3 --seed 0 --null_draws 3 --null_ctx 30 --out runs/gpt2_v5/ing_s0_abs5e-3
+#   runtime_s 1443.7; done 02:58
+
+# ---WP-7 (2026-10-11 ~04:3x+0800; 收尾整理员; PY=/home/administrator/dev/ML/lrg_env/bin/python)---
+git rev-parse HEAD
+#   -> 65d05830be19b7d7f0e944d5acd3823220138966 (V5 ran entirely on this HEAD; no intermediate commits; recorded before the WP-7 commit)
+$PY selfcheck_v5.py --runs "runs/*_v5/*"
+#   -> 25 runs checked, 0 FAIL, 31 WARN, exit 0 (frq_ctx 0.00 x23; gpt2 cau_ctx 0.00 x5; gpt2 frq_unemb 0.42/0.65/0.62 x3)
+$PY - <<'EOF'   # data_manifest.json: append gemma1b_c4big_s{0,1,2} (sha256 via hashlib streaming; shape/dtype via np.load mmap; meta filtered to the key set of existing c4 entries)
+import json, hashlib, numpy as np, os
+orig = json.load(open("data_manifest.json"))
+def sha256(p):
+    h = hashlib.sha256()
+    with open(p, "rb") as f:
+        for chunk in iter(lambda: f.read(1 << 20), b""): h.update(chunk)
+    return h.hexdigest()
+def entry(d):
+    files = {}
+    for fn in ["G.npy", "E_base.npy", "E_target.npy", "pairs.npy"]:
+        a = np.load(os.path.join(d, fn), mmap_mode="r")
+        files[fn] = {"sha256": sha256(os.path.join(d, fn)), "shape": list(a.shape), "dtype": str(a.dtype)}
+    files["contexts.json"] = {"sha256": sha256(os.path.join(d, "contexts.json"))}
+    m = json.load(open(os.path.join(d, "meta.json")))
+    keep = ["model","dtype","load_in_4bit","n_pairs","logits_rel_err","seed","concept","ctx_source"]
+    files["meta"] = {k: m[k] for k in keep}
+    files["corpus"] = "allenai/c4 en (streaming, shuffle seed derived, 0.5 thinning)"
+    files["docs_scanned"] = 10001   # derived: extract_embeddings.py:125-132 counts n_docs+1 (V4: 5000->5001); stdout not retained
+    return files
+for s in [0, 1, 2]: orig[f"gemma1b_c4big_s{s}"] = entry(f"data/gemma1b_c4big_s{s}")
+open("data_manifest.json", "w").write(json.dumps(orig, indent=1))   # matches existing style; git diff = 147 insertions, 0 deletions
+EOF
+$PY -m pip freeze > env.txt && $PY -c "import sys,torch,transformers,numpy; print(f'python {sys.version.split()[0]}'); print(f'torch {torch.__version__} cuda {torch.version.cuda} device {torch.cuda.get_device_name(0)}'); print(f'transformers {transformers.__version__}'); print(f'numpy {numpy.__version__}')" >> env.txt
+#   vs old env.txt: +12 packages (datasets==5.1.0 + aiohttp/dill/frozenlist/multidict/multiprocess/propcache/pyarrow/tabulate/xxhash/yarl family); version block unchanged
+# repro_check.md += GitHub issue draft for KihoPark/dual-steering (missing torch.nn.functional import; one-line fix; cosine 1.000000 evidence) - DRAFTED ONLY, not submitted
+# DEVIATIONS.md += V5 section; STATUS.md overwritten with final version
+# security hook block: first `git commit` attempt was blocked by the Mimosa pre-commit hook - high-severity path
+#   traversal at analyze_v5.py:130 (unvalidated --out write target). Fix (DEVIATIONS V5.12): --out resolved and
+#   required to stay inside the repo root; no computational change. Verification:
+$PY analyze_v5.py --out results_v5/_guard_check --group A_third_a5e-3 runs/gemma1b_v5/A_s0_abs5e-3,runs/gemma1b_v5/A_s1_abs5e-3,runs/gemma1b_v5/A_s2_abs5e-3 --group C_third_a5e-3 runs/gemma1b_v5/C_s0_abs5e-3,runs/gemma1b_v5/C_s1_abs5e-3,runs/gemma1b_v5/C_s2_abs5e-3 --pairs euc_dmd:dua_dmd,cau_unemb:dua_unemb,frq_unemb:dua_unemb,cau_unemb:frq_unemb,frq_dmd:dua_dmd
+#   -> all 6 output files byte-identical to results_v5/p0 (diff -q per file); guard rejects /tmp/escape_out and
+#      ../outside with SystemExit; results_v5/_guard_check deleted after the check
+# second hook block: static CWE-22 sink check does not model the upstream guard, re-flagged open() at (new) line 138.
+#   Fix 2 (DEVIATIONS V5.12): analysis_v5.md now written once via Path(a.out, ...).write_text from an in-memory buffer;
+#   byte-identity rerun of the p0 invocation -> all 6 files IDENTICAL again; Mimosa deep scan analyze_v5.py -> 0 findings
+#   (scanId scan-2026-10-10T20-03-35.687Z-9f5787e067a1)
+git add -A && git commit -m "V5 final: P0/P1/P2 runs, parity+regression gates, aggregate, conclusions, WP-7 wrap-up"
+git tag -a v5-g6 -m "V5 gate G6: WP-0 dual-backend parity + WP-1 V4 regression (max abs diff 0.0)"
+git tag -a v5-g7 -m "V5 gate G7: P0 complete (6/6 runs), selfcheck 0 FAIL, mid-term STATUS, K1/K2 reported"
+git tag -a v5-final -m "V5 full delivery: 27 runs, AGGREGATE_V5, CONCLUSIONS_V5, WP-7 (deviations/manifest/env/issue-draft)"
